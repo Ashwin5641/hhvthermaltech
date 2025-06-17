@@ -203,7 +203,7 @@
             </div>
         </div>
         <div class="about-company-content">
-            <div class="content-heading">
+            <div data-aos="fade-right" class="content-heading">
                 <p>ABOUT OUR COMPANY</p>
                 <h1>Trusted Global Supplier Of High-Quality Vacuum Furnaces</h1>
             </div>
@@ -214,7 +214,7 @@
 
                     </div>
                     <div class="para-icon2">
-                        
+
                     </div>
                 </div>
             </div>

@@ -1212,7 +1212,9 @@ body {
     font-size: 42px;
     font-weight: 700;
 }
-
+.about-our-company > .about-company-content > .content-para-icon > p {
+    text-align: justify;
+}
 
 
 /* responsive for the about our company container */
@@ -1241,9 +1243,8 @@ body {
     .about-our-company > .about-company-image > .company-image2 {
         display: none;
     }
-    .about-our-company > .about-company-content > .about-content-heading > h1 {
-        font-size: clamp(20px, 6vw, 32px);
+    .about-our-company > .about-company-content > .content-heading > h1 {
+        font-size: clamp(24px, 6vw, 32px);
     }
-
 }
 
