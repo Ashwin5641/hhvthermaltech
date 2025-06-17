@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HHV Thermal Tech - Premier Thermal Tech Vacuum Technology Group</title>
+    <link rel="icon" href="./assets/images/logo_1.png" type="icon/x-image">
+
+    <!-- links for the stylesheets -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- ---------------link for the fonts-------------- -->
+    <!-- Rajdhaani Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- DM sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap" rel="stylesheet">
+
+    <!-- Montserrat -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    <!-- Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    
+    
+    <!-- --------------links for the icons----------------------->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- link for the AOS animations on scroll -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- *************tart of the topbar********** -->
+    <div class="topbar">
+        <div class="topbar-location">
+            <ul>
+                <li><a href="#"><i class="fa-solid fa-location-dot"></i><span>&nbsp;&nbsp;No. 17, Phase 1, Peenya, Bengaluru, India</span></a></li>
+            </ul>
+        </div>
+        <div class="topbar-social-media">
+            <ul>
+                <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            </ul>
+        </div>
+    </div>
+
+
+
+    <!-- **************start of the navbar************ -->
+    <div class="navbar">
+        <div class="navbar-logo">
+            <ul>
+                <li><a href="./index.php"><img src="./assets/images/logo.png" alt="logo"></a></li>
+            </ul>
+        </div>
+        <div class="navbar-menu-items">
+            <ul>
+                <li class="navbar-products">
+                    <a href="#">Products</a>
+                    <ul class="navbar-products-submenu">
+                        <li><a href="#">Heat Treatment Furnaces</a></li>
+                        <li><a href="#">Vacuum Brazing Furnaces</a></li>
+                        <li><a href="#">Vacuum Aluminium Brazing Furnaces</a></li>
+                        <li><a href="#">Vacuum Hot Presses</a></li>
+                        <li><a href="#">Vacuum Ovens</a></li>
+                        <li><a href="#">Thermo Vacuum Furnaces</a></li>
+                        <li><a href="#">Induction Melting and Casting Furnaces</a></li>
+                        <li><a href="#">Arc Re-melting Furnaces</a></li>
+                        <li><a href="#">CVD, CVI and Graphitization Furnaces</a></li>
+                        <li><a href="#">Spares and Service</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Custom Systems</a></li>
+                <li><a href="#">Resource Centre</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">Careers</a></li>
+            </ul>
+        </div>
+        <div class="navbar-button">
+            <ul>
+                <li class="navbar-contact"><a href="#">Contact</a></li>
+                <li class="navbar-hamburger"><i class="fa-solid fa-bars"></i></li>
+            </ul>
+        </div>
+    </div>
+
+
+    <!-- **************start of the sidebar************* -->
+    <div class="sidebar">
+
+    </div>
+
+
+
+    <!-- ***************start of the carsousel container**************  -->
+    <div class="carousel">
+        <div data-aos="zoom-in-down" class="carousel-content">
+            <h1>India's Premier Thermal Vacuum Technology Group</h1><br>
+            <h3>Vacuum Technology, Vacuum Furnaces and Carbon Composites</h3>
+            <ul class="carousel-content-button">
+                <li><a href="#">Know More</a></li>
+            </ul>
+            <div class="carousel-content-icon">
+                <div class="carousel-content-google">
+                    <img src="./assets/images/index-carousel/google-icon1.png" alt="iocn">
+                    <h4>4.9 from 1200+ reviews</h4>
+                </div>
+                <div class="carousel-content-completed">
+                    <img src="./assets/images/index-carousel/completed-icon.png" alt="icon">
+                    <h4>Completed Projects</h4>
+                </div>
+            </div>
+        </div>
+        <div data-aos="fade-up" data-aos-anchor-placement="top-bottom" class="carousel-image">
+            <div class="carousel-img">
+                <img src="./assets/images/index-carousel/imag2.png" alt="">
+            </div>
+        </div>
+    </div>
+
+    <!-- **************start of the cards container************ -->
+    <div data-aos="fade-up" data-aos-duration="3000" class="carousel-under-cards">
+        <div class="carousel-under-card1 card">
+            <div class="card1-image card-image">
+                <div class="card1-inside-img card-inside-image"></div>
+            </div>
+            <div class="carousel-under-card1-content content">
+                <h3>Vacuum Heat Treatment Furnaces</h3><br>
+                <p>Precise, oxidation-free metal processing</p><br>
+                <ul>
+                    <li><span><i class="fa-solid fa-check"></i></span>&nbsp;&nbsp;Ideal for annealing, hardening, ageing, tempering & carburizing</li>
+                    <li><span><i class="fa-solid fa-check"></i></span>&nbsp;&nbsp;Multi-point soaking and gas quenching cycles for consistency</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="carousel-under-card2 card">
+            <div class="card2-image card-image">
+                <div class="card2-inside-img card-inside-image"></div>
+            </div>
+            <div class="carousel-under-card2-content content">
+                <h3>Vacuum Brazing Furnaces</h3><br><br>
+                <p>High-integrity joints, contamination-free environment</p><br>
+                <ul>
+                    <li><span><i class="fa-solid fa-check"></i></span>&nbsp;&nbsp;Fully automatic brazing with tight process control</li>
+                    <li><span><i class="fa-solid fa-check"></i></span>&nbsp;&nbsp;Ensures repeatable, high-purity results for sensitive components</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="carousel-under-card3 card">
+            <div class="card3-image card-image">
+                <div class="card3-inside-img card-inside-image"></div>
+            </div>
+            <div class="carousel-under-card3-content content">
+                <h3>CVD/CVI & Graphitization Furnaces</h3><br>
+                <p>For carbon & ceramic composite manufacturing</p><br>
+                <ul>
+                    <li><span><i class="fa-solid fa-check"></i></span>&nbsp;&nbsp;High-temperature operations up to 2200 °C with precise vacuum control</li>
+                    <li><span><i class="fa-solid fa-check"></i></span>&nbsp;&nbsp;Automated safety and gas management with ± 5 °C uniformity</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="carousel-under-card4 card">
+            <div class="card4-image card-image">
+                <div class="card4-inside-img card-inside-image"></div>
+            </div>
+            <div class="carousel-under-card4-content content">
+                <h3>Spares, Service & Retrofit</h3><br><br>
+                <p>Comprehensive lifecycle support</p><br><br>
+                <ul>
+                    <li><span><i class="fa-solid fa-check"></i></span>&nbsp;&nbsp;Nationwide support across India</li>
+                    <li><span><i class="fa-solid fa-check"></i></span>&nbsp;&nbsp;Upgrades, maintenance, calibration, and spare parts for all furnace types</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- *********************start of the about our company****************  -->
+    
+    <div class="about-our-company">
+        <div class="about-company-image">
+            <div data-aos="fade-right" class="company-image1">
+                <img src="./assets/images/index-about-company/image.png" alt="">
+            </div>
+            <div data-aos="fade-right" class="company-image2">
+                <img src="./assets/images/index-about-company/hhv1.png" alt="">
+            </div>
+        </div>
+        <div class="about-company-content">
+            <div class="content-heading">
+                <p data-aos="fade-right" class="heading-highlight">ABOUT OUR COMPANY</p>
+                <h1 data-aos="fade-right" >Trusted Global Supplier Of High-Quality Vacuum Furnaces</h1>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+    <!-- ---------script for the AOS animations on scroll--------- -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <!-- -------------script for the scroll reveal js-------------  -->
+    <!-- <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <script>
+        ScrollReveal().reveal('.scrollreveal'), { delay: 2000 };
+    </script> -->
+</body>
+
+</html>

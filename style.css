@@ -1,0 +1,1245 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+h1, h2, h3 {
+  font-weight: 600;
+}
+body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+/* ****************styling for the topbar*************** */
+.topbar {
+    height: 40px;
+    background-color: #0b1f3a;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+}
+.topbar > .topbar-location > ul > li > a{
+    color: white;
+    font-size: 14px;
+}
+.topbar > .topbar-location > ul > li > a > i {
+    color: #d92929;
+}
+.topbar > .topbar-social-media  > ul  {
+    display: flex;
+    gap: 10px;
+}
+.topbar > .topbar-social-media > ul > li > a {
+    color: white;
+    font-size: 14px;
+}
+.topbar > .topbar-social-media > ul > li > a:hover {
+    color: #d92929;
+}
+
+/* responsive styling for the topbar of mobile and tab screens */
+@media (max-width: 400px) {
+    .topbar {
+        display: none;
+    }
+}
+@media (min-width: 401px) and (max-width:450px) {
+    .topbar {
+        padding: 0 10px;
+    }
+}
+@media (min-width: 451px) and (max-width: 500px) {
+    .topbar {
+        padding: 0 20px;
+    }
+}
+@media (min-width: 501px) and (max-width: 550px) {
+    .topbar {
+        padding: 0 30px;
+    }
+}
+@media (min-width: 551px) and (max-width: 600px) {
+    .topbar {
+        padding: 0 30px;
+    }
+}
+@media (min-width: 601px) and (max-width: 650px) {
+    .topbar {
+        padding: 0 40px;
+    }
+}
+
+/* ********************styling for the navbar*************** */
+.navbar {
+    display: flex;
+    height: 110px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 60px;
+    z-index: 999;
+    position: sticky;
+    top: 0px;
+    background-color: white;
+}
+.navbar > .navbar-logo > ul > li > a > img {
+    height: 80px;
+    width: 230px;
+}
+.navbar-products {
+    cursor: pointer;
+    position: relative;
+}
+.navbar-products-submenu {
+    display: none;
+    position: absolute;
+    width: 250px;
+    top: 100%;
+    border-radius: 5px;
+    z-index: 999;
+    background-color: white;
+}
+.navbar-products:hover .navbar-products-submenu{
+    display: block;
+}
+.navbar-products-submenu > li{
+    border-bottom: 0.5px solid rgba(190, 185, 185, 0.726);
+    padding: 10px 10px 10px 20px;
+}
+.navbar-products-submenu > li > a {
+    color: #0b1f3a;
+}
+.navbar > .navbar-menu-items > ul {
+    display: flex;
+    gap: 25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.navbar > .navbar-menu-items > ul > li > a {
+    color: #0b1f3a;
+}
+.navbar > .navbar-button > ul > li > a {
+  position: relative; /* Needed for pseudo-elements */
+  /* display: inline-block; */
+  color: white;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: #E53935;
+  padding: 18px 45px;
+  border-radius: 5px;
+  cursor: pointer;
+  overflow: hidden;
+  z-index: 1;
+  transition: color 0.4s ease-in-out;
+}
+.navbar > .navbar-button > ul > li > a::before,
+.navbar > .navbar-button > ul > li > a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #0b1f3a;
+  z-index: -1;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+.navbar > .navbar-button > ul > li > a::before {
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+}
+
+.navbar > .navbar-button > ul > li > a::after {
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom right;
+}
+
+.navbar > .navbar-button > ul > li > a:hover::before,
+.navbar > .navbar-button > ul > li > a:hover::after {
+  width: 100%;
+  height: 100%;
+}
+
+.navbar > .navbar-button > ul > li > a:hover {
+  color: white;
+}
+.navbar > .navbar-button > ul {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+.navbar > .navbar-button > ul > li > i {
+    font-size: 32px;
+    color: #0b1f3a;
+}
+.navbar-hamburger {
+    display: none;
+}
+
+
+/* responsive styling for the navbar of mobile and tab screens */
+@media (min-width: 320px) and (max-width: 400px) {
+    .navbar {
+        padding: 0px 10px;
+    }
+    .navbar > .navbar-logo > ul > li > a > img {
+        height: 60px;
+        width: 180px;
+    }
+    .navbar-contact {
+        display: none;
+    }
+    .navbar > .navbar-menu-items {
+        display: none;
+    }
+    .navbar-hamburger {
+        display: block;
+    }
+}
+@media (min-width: 401px) and (max-width: 450px) {
+    .navbar {
+        padding: 0px 10px;
+    }
+    .navbar > .navbar-logo > ul > li > a > img {
+        height: 80px;
+        width: 230px;
+    }
+    .navbar-contact {
+        display: none;
+    }
+    .navbar > .navbar-menu-items {
+        display: none;
+    }
+    .navbar-hamburger {
+        display: block;
+    }
+}
+@media (min-width: 451px) and (max-width: 500px) {
+    .navbar {
+        padding: 0px 20px;
+    }
+    .navbar > .navbar-logo > ul > li > a > img {
+        height: 80px;
+        width: 230px;
+    }
+    .navbar-contact {
+        display: none;
+    }
+    .navbar > .navbar-menu-items {
+        display: none;
+    }
+    .navbar-hamburger {
+        display: block;
+    }
+}
+@media (min-width: 501px) and (max-width: 550px) {
+    .navbar {
+        padding: 0px 30px;
+    }
+    .navbar > .navbar-logo > ul > li > a > img {
+        height: 80px;
+        width: 230px;
+    }
+    .navbar-contact {
+        display: none;
+    }
+    .navbar > .navbar-menu-items {
+        display: none;
+    }
+    .navbar-hamburger {
+        display: block;
+    }
+}
+@media (min-width: 551px) and (max-width: 600px) {
+    .navbar {
+        padding: 0px 30px;
+    }
+    .navbar > .navbar-logo > ul > li > a > img {
+        height: 80px;
+        width: 230px;
+    }
+    .navbar > .navbar-menu-items {
+        display: none;
+    }
+    .navbar-contact {
+        display: none;
+    }
+    .navbar > .navbar-menu-items {
+        display: none;
+    }
+    .navbar-hamburger {
+        display: block;
+    }
+}
+@media (min-width: 601px) and (max-width: 650px) {
+    .navbar {
+        padding: 0px 40px;
+    }
+    .navbar > .navbar-logo > ul > li > a > img {
+        height: 80px;
+        width: 230px;
+    }
+    .navbar-contact {
+        display: none;
+    }
+    .navbar > .navbar-menu-items {
+        display: none;
+    }
+    .navbar-hamburger {
+        display: block;
+    }
+}
+@media (min-width: 651px) and (max-width: 1170px) {
+    .navbar-hamburger {
+        display: block;
+    }
+    .navbar > .navbar-menu-items {
+        display: none;
+    }
+}
+
+
+/* ***************styling for the carousel container**************** */
+.carousel {
+    height: 600px;
+    background-color: #0b1f3a;
+    border-radius: 30px;
+    margin: 0px 60px;
+    box-shadow: 5px 0px 10px gray;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 30px 50px 150px 50px;
+    align-items: center;
+}
+.carousel > .carousel-content > h1{
+    color: white;
+    font-size: 48px;
+}
+.carousel > .carousel-content > h3{
+    color: white;
+}
+.carousel > .carousel-content > ul > li > a{
+    position: relative;
+    color: white;
+    font-size: 18px;
+    background-color: #E53935;
+    padding: 18px 45px;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+    z-index: 1;
+    transition: color 0.4s ease-in-out;
+}
+.carousel > .carousel-content > ul {
+    margin-top: 60px;
+}
+.carousel > .carousel-content > ul > li > a::before,
+.carousel > .carousel-content > ul > li > a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #2b4c77;
+  z-index: -1;
+  transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+}
+.carousel > .carousel-content > ul > li > a::before {
+  top: 0;
+  left: 0;
+  transform-origin: top left;
+}
+.carousel > .carousel-content > ul > li > a::after {
+  bottom: 0;
+  right: 0;
+  transform-origin: bottom right;
+}
+.carousel > .carousel-content > ul > li > a:hover::before,
+.carousel > .carousel-content > ul > li > a:hover::after {
+  width: 100%;
+  height: 100%;
+}
+.carousel > .carousel-content > .carousel-content-icon {
+    margin-top: 60px;
+    display: flex;
+    gap: 50px;
+}
+.carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+    height: 80px;
+    width: 150px;
+}
+.carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > h4 {
+    color: white;
+}
+.carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+    height: 60px;
+    width: 180px;
+    margin-top: 10px;
+}
+.carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > h4 {
+    color: white;
+    margin-top: 10px;
+    position: relative;
+}
+.carousel > .carousel-image {
+    display: flex;
+    justify-content: center;
+}
+.carousel > .carousel-image > .carousel-img {
+    height: 400px;
+    width: 600px;
+    background-color: #2b4c77;
+    clip-path: polygon(90px 0, 0 90px, 0 100%, 100% 100%, 100% 0);
+    border-radius: 20px;
+}
+.carousel > .carousel-image > .carousel-img > img {
+    height: 400px;
+    width: 600px;
+    border-radius: 20px;
+}
+
+/* responsive for the carousel container of mobile and tab screens */
+@media (min-width: 320px) and (max-width: 400px){
+    .carousel {
+        height: auto;
+        margin: 0px 10px;
+        padding: 50px 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 50px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(50px 0, 0 50px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 30px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 60px;
+        width: 130px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 40px;
+        width: 140px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 401px) and (max-width: 450px) {
+    .carousel {
+        height: auto;
+        margin: 0px 10px;
+        padding: 50px 10px;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 50px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(50px 0, 0 50px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 30px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 60px;
+        width: 130px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 40px;
+        width: 140px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 451px) and (max-width: 500px) {
+    .carousel {
+        height: auto;
+        margin: 0px 20px;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 50px;
+        padding: 50px 30px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(50px 0, 0 50px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 30px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 60px;
+        width: 130px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 40px;
+        width: 140px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 501px) and (max-width: 550px) {
+    .carousel {
+        height: auto;
+        margin: 0px 30px;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 50px;
+        padding: 50px 30px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(80px 0, 0 80px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 30px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 60px;
+        width: 130px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 40px;
+        width: 140px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 551px) and (max-width: 600px) {
+    .carousel {
+        height: auto;
+        margin: 0px 30px;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 50px;
+        padding: 50px 30px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(80px 0, 0 80px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 34px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 60px;
+        width: 130px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 40px;
+        width: 140px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 601px) and (max-width: 650px) {
+    .carousel {
+        height: auto;
+        margin: 0px 40px;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 50px;
+        padding: 50px 30px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(80px 0, 0 80px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 34px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 60px;
+        width: 130px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 40px;
+        width: 140px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 651px) and (max-width: 700px) {
+    .carousel {
+        height: auto;
+        margin: 0px 60px;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 50px;
+        padding: 50px 30px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(80px 0, 0 80px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 35px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 60px;
+        width: 130px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 40px;
+        width: 140px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 701px) and (max-width: 750px) {
+    .carousel {
+        height: auto;
+        margin: 0px 60px;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 50px;
+        padding: 50px 30px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(80px 0, 0 80px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 35px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 60px;
+        width: 130px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 40px;
+        width: 140px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 751px) and (max-width: 800px) {
+    .carousel {
+        height: auto;
+        margin: 0px 60px;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 50px;
+        padding: 50px 30px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(80px 0, 0 80px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 40px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 60px;
+        width: 130px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 40px;
+        width: 140px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 800px) and (max-width: 900px) {
+    .carousel {
+        height: auto;
+        margin: 0px 60px;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 50px;
+        padding: 50px 30px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(90px 0, 0 90px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 44px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 80px;
+        width: 150px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 60px;
+        width: 160px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 900px) and (max-width: 1000px) {
+    .carousel {
+        height: auto;
+        margin: 0px 60px;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 50px;
+        padding: 50px 30px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(90px 0, 0 90px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 48px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 80px;
+        width: 150px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 60px;
+        width: 160px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 901px) and (max-width: 1000px) {
+    .carousel {
+        height: auto;
+        margin: 0px 60px;
+        max-width: 100%;
+        display: grid;
+        grid-template-columns: 1fr;
+        max-width: 100%;
+        gap: 50px;
+        padding: 50px 30px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(90px 0, 0 90px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 48px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 80px;
+        width: 150px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 60px;
+        width: 160px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 1001px) and (max-width: 1100px) {
+    .carousel {
+        height: auto;
+        margin: 0px 60px;
+        max-width: 100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 50px;
+        padding: 40px 30px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(70px 0, 0 70px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 38px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 60px;
+        width: 130px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 40px;
+        width: 140px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 1101px) and (max-width: 1250px) {
+    .carousel {
+        height: auto;
+        margin: 0px 60px;
+        max-width: 100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 50px;
+        padding: 40px 30px 40px 30px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(70px 0, 0 70px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 38px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 60px;
+        width: 130px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 40px;
+        width: 140px;
+        margin-top: 10px;
+    }
+}
+@media (min-width: 1251px) and (max-width: 1460px) {
+    .carousel {
+        height: auto;
+        margin: 0px 60px;
+        max-width: 100%;
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 50px;
+        padding: 50px 30px 150px 30px;
+    }
+    .carousel > .carousel-content {
+        min-width: 0;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .carousel > .carousel-image > .carousel-img {
+        width: 100%;
+        height: auto;
+        clip-path: polygon(70px 0, 0 70px, 0 100%, 100% 100%, 100% 0);
+    }
+    .carousel > .carousel-image > .carousel-img > img {
+        width: 100%;
+        height: auto;
+    }
+    .carousel > .carousel-content > .carousel-content-icon {
+        display: flex;
+    }
+    .carousel > .carousel-content > h1{
+        color: white;
+        font-size: 44px;
+    }
+    .carousel > .carousel-content > h3{
+        color: white;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-google > img {
+        height: 60px;
+        width: 130px;
+    }
+    .carousel > .carousel-content > .carousel-content-icon > .carousel-content-completed > img {
+        height: 40px;
+        width: 140px;
+        margin-top: 10px;
+    }
+}
+
+
+
+
+/* **************start of the cards container************* */
+.carousel-under-cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding: 0 110px 50px 110px;
+    position: relative;
+    margin-top: -60px;
+}
+
+.carousel-under-cards > .card {
+    padding: 20px;
+    background-color: #fefeff;
+    box-shadow: 2px 5px 2px 2px rgba(192, 187, 187, 0.473),2px 5px 2px rgba(192, 187, 187, 0.473);
+    border-radius: 10px;
+    text-align: left;
+}
+.card-image {
+    margin-bottom: 20px;
+}
+
+.card-inside-image {
+    background-color: #d92929;
+    border-radius: 50%;
+    height: 80px;
+    width: 80px;
+    background-size: 75% 75%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 16px;
+}
+
+.card1-inside-img {
+    background-image: url(./assets/images/index-carousel-under-cards/card1-icon.png);
+}
+.card2-inside-img {
+    background-image: url(./assets/images/index-carousel-under-cards/card2-icon.png);
+}
+.card3-inside-img {
+    background-image: url(./assets/images/index-carousel-under-cards/card3-icon.png);
+}
+.card4-inside-img {
+    background-image: url(./assets/images/index-carousel-under-cards/card4-icon.png);
+}
+
+.content ul li span {
+    color: #d92929;
+    font-weight: bold;
+}
+.content ul li {
+    margin-bottom: 10px;
+}
+.carousel-under-cards > .card > .content  > h3 , p , ul > li {
+    color: #0b1f3a;
+}
+
+/* responsive for the cards under container */
+@media (min-width: 320px) and (max-width: 800px) {
+    .carousel-under-cards {
+        grid-template-columns: 1fr;
+        padding: 0px 20px;
+        margin-top: 70px;
+    }
+}
+@media  (min-width: 801px) and (max-width: 1252px) {
+    .carousel-under-cards {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 0px 30px;
+        margin-top: 50px;
+    }
+}
+
+
+/* *********************styling for the about our company************************* */
+
+.about-our-company {
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    padding: 50px 0px;
+}
+.about-our-company > .about-company-image {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+    box-sizing: border-box;
+    padding: 20px;
+    width: calc(100% / 2);
+}
+.about-our-company > .about-company-content {
+    width: calc(100% / 2);
+    padding: 20px;
+    box-sizing: border-box;
+}   
+.about-our-company > .about-company-image > .company-image1 > img {
+    height: 565px;
+    width: 440px;
+    clip-path: polygon(90px 0, 0 70px, 0 100%, 100% 100%, 100% 0);
+    border-radius: 20px;
+    background-size: 100% 100%;
+    position: relative;
+    left: 80px;
+}
+.about-our-company > .about-company-image > .company-image2 > img {
+    height: 475px;
+    width: 390px;
+    clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
+    border-radius: 20px;
+    position: relative;
+    right: 10px;
+    bottom: -100px;
+}
+.about-our-company > .about-company-content > .about-content-heading > p {
+    color: #0b1f3a;
+}
+.about-our-company > .about-company-content > .about-content-heading > h1 {
+    color: #0b1f3a;
+    font-size: 42px;
+    font-weight: 900;
+}
+/* responsive for the about our company container */
+@media (min-width: 320px) and (max-width: 400px) {
+    .about-our-company {
+        display: flex;
+        flex-direction: column;
+        padding: 30px 10px;
+        height: auto;
+    }
+    .about-our-company > .about-company-image {
+        width: 100%;
+        padding: 0px;
+    }
+    .about-our-company > .about-company-content {
+        width: 100%;
+        padding: 10px;
+    }
+    .about-our-company > .about-company-image > .company-image1 > img {
+        width: 100%;
+        height: auto;
+        left: 0;
+        clip-path: polygon(70px 0, 0 70px, 0 100%, 100% 100%, 100% 0);
+        justify-content: center;
+    }
+    .about-our-company > .about-company-image > .company-image2 {
+        display: none;
+    }
+    .about-our-company > .about-company-content > .about-content-heading > h1 {
+        font-size: clamp(20px, 6vw, 32px);
+    }
+
+}
+
