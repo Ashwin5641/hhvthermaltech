@@ -1169,21 +1169,25 @@ body {
     max-width: 100%;
     display: flex;
     padding: 50px 0px;
+    align-items: center;
 }
 .about-our-company > .about-company-image {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     padding-bottom: 20px;
     box-sizing: border-box;
     padding: 20px;
     width: calc(100% / 2);
+    display: flex;
+    align-items: center;
 }
 .about-our-company > .about-company-content {
     width: calc(100% / 2);
     padding: 20px;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }   
 .about-our-company > .about-company-image > .company-image1 > img {
     height: 565px;
@@ -1192,7 +1196,7 @@ body {
     border-radius: 20px;
     background-size: 100% 100%;
     position: relative;
-    left: 80px;
+    left: 40px;
 }
 .about-our-company > .about-company-image > .company-image2 > img {
     height: 475px;
@@ -1200,17 +1204,17 @@ body {
     clip-path: polygon(0% 0%, 100% 0%, 100% 85%, 85% 100%, 0% 100%);
     border-radius: 20px;
     position: relative;
-    right: 10px;
-    bottom: -100px;
+    right: 100px;
+    top: 100px;
 }
-.about-our-company > .about-company-content > .about-content-heading > p {
-    color: #0b1f3a;
-}
-.about-our-company > .about-company-content > .about-content-heading > h1 {
+.about-our-company > .about-company-content > .content-heading > h1 {
     color: #0b1f3a;
     font-size: 42px;
-    font-weight: 900;
+    font-weight: 700;
 }
+
+
+
 /* responsive for the about our company container */
 @media (min-width: 320px) and (max-width: 400px) {
     .about-our-company {
