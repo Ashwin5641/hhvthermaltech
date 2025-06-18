@@ -1168,7 +1168,7 @@ body {
     width: 100%;
     max-width: 100%;
     display: flex;
-    padding: 50px 0px;
+    padding: 100px 10px;
     align-items: center;
 }
 .about-our-company > .about-company-image {
@@ -1215,15 +1215,91 @@ body {
 .about-our-company > .about-company-content > .content-para-icon > p {
     text-align: justify;
 }
+.about-our-company > .about-company-content > .content-para-icon > .para-icons {
+    display: flex;
+    gap: 10px;
+}
+.about-our-company > .about-company-content > .content-para-icon > .para-icons > .para-icon1 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.about-our-company > .about-company-content > .content-para-icon > .para-icons > .para-icon1 > img {
+    height: 80px;
+    width: 80px;
+}
+.about-our-company > .about-company-content > .content-para-icon > .para-icons > .para-icon1 > h3 {
+    color: #0b1f3a;
+}
+.about-our-company > .about-company-content > .content-para-icon > .para-icons > .para-icon2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.about-our-company > .about-company-content > .content-para-icon > .para-icons > .para-icon2 > img {
+    height: 100px;
+    width: 100px;
+}
+.about-our-company > .about-company-content > .content-para-icon > .para-icons > .para-icon2 > h3 {
+    color: #0b1f3a;
+}
+.about-our-company > .about-company-content > .content-para-icon > a {
+    color: white;
+    background-color: #E53935;
+    padding: 18px 38px;
+    position: absolute;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: color 0.5s ease-in-out;
+    position: absolute;
+    z-index: 1;
+}
+.about-our-company > .about-company-content > .content-para-icon > a::before,
+.about-our-company > .about-company-content > .content-para-icon > a::after {
+    content: '';
+    height: 0;
+    width: 0;
+    background-color: #0b1f3a;
+    z-index: -1;
+    transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+    position: absolute;
+}   
+.about-our-company > .about-company-content > .content-para-icon > a::before {
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+}
+.about-our-company > .about-company-content > .content-para-icon > a::after {
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom right;
+}
 
+.about-our-company > .about-company-content > .content-para-icon > a:hover::before,
+.about-our-company > .about-company-content > .content-para-icon > a:hover::after {
+    height: 100%;
+    width: 100%;
+}
+.animation-texts {
+    opacity: 0;
+    animation: fadeIn 2s forwards;
+    transform: translateX(-100px);
+    overflow: hidden;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
 
 /* responsive for the about our company container */
 @media (min-width: 320px) and (max-width: 400px) {
     .about-our-company {
         display: flex;
         flex-direction: column;
-        padding: 30px 10px;
         height: auto;
+        padding: 100px 0px;
     }
     .about-our-company > .about-company-image {
         width: 100%;
@@ -1239,6 +1315,7 @@ body {
         left: 0;
         clip-path: polygon(70px 0, 0 70px, 0 100%, 100% 100%, 100% 0);
         justify-content: center;
+        padding: 0px 10px;
     }
     .about-our-company > .about-company-image > .company-image2 {
         display: none;
@@ -1246,5 +1323,257 @@ body {
     .about-our-company > .about-company-content > .content-heading > h1 {
         font-size: clamp(24px, 6vw, 32px);
     }
+    .about-our-company > .about-company-content > .content-para-icon > .para-icons {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
 }
-
+@media (min-width: 401px) and (max-width: 600px) {
+    .about-our-company {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 100px 0px;
+    }
+    .about-our-company > .about-company-image {
+        width: 100%;
+        padding: 0px;
+    }
+    .about-our-company > .about-company-content {
+        width: 100%;
+        padding: 10px;
+    }
+    .about-our-company > .about-company-image > .company-image1 > img {
+        width: 100%;
+        height: auto;
+        left: 0;
+        clip-path: polygon(70px 0, 0 70px, 0 100%, 100% 100%, 100% 0);
+        justify-content: center;
+        padding: 0px 10px;
+    }
+    .about-our-company > .about-company-image > .company-image2 {
+        display: none;
+    }
+    .about-our-company > .about-company-content > .content-heading > h1 {
+        font-size: clamp(24px, 6vw, 32px);
+    }
+    .about-our-company > .about-company-content > .content-para-icon > .para-icons {
+        display: flex;
+        gap: 10px;
+        flex-direction: column;
+    }
+}
+@media (min-width: 601px) and (max-width: 740px) {
+    .about-our-company {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 100px 10px;
+    }
+    .about-our-company > .about-company-image {
+        width: 100%;
+        padding: 0px 0px 80px 0px;
+        justify-content: center;
+    }
+    .about-our-company > .about-company-content {
+        width: 100%;
+        padding: 10px;
+    }
+    .about-our-company > .about-company-image > .company-image1 > img {
+        width: 100%;
+        height: auto;
+        left: 0;
+        clip-path: polygon(70px 0, 0 70px, 0 100%, 100% 100%, 100% 0);
+        justify-content: center;
+        padding: 0px 10px;
+        max-width: 500px;
+    }
+    .about-our-company > .about-company-image > .company-image2  {
+        display: none;
+    }
+    
+    .about-our-company > .about-company-content > .content-heading > h1 {
+        font-size: clamp(24px, 6vw, 32px);
+    }
+    .about-our-company > .about-company-content > .content-para-icon > .para-icons {
+        display: flex;
+        gap: 10px;
+    }
+}
+@media (min-width: 741px) and (max-width: 1000px) {
+    .about-our-company {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        padding: 100px 10px;
+    }
+    .about-our-company > .about-company-image {
+        width: 100%;
+        padding: 0px 0px 80px 0px;
+        justify-content: center;
+    }
+    .about-our-company > .about-company-content {
+        width: 100%;
+        padding: 10px;
+    }
+    .about-our-company > .about-company-image > .company-image1 > img {
+        width: 100%;
+        height: auto;
+        left: 0;
+        clip-path: polygon(70px 0, 0 70px, 0 100%, 100% 100%, 100% 0);
+        justify-content: center;
+        padding: 0px 10px;
+        max-width: 400px;
+    }
+    .about-our-company > .about-company-image > .company-image2  {
+        display: block;
+    }
+    .about-our-company > .about-company-image > .company-image2 > img {
+        height: auto;
+        width: 100%;
+        max-width: 400px;
+    }
+    .about-our-company > .about-company-content > .content-heading > h1 {
+        font-size: clamp(24px, 6vw, 32px);
+    }
+    .about-our-company > .about-company-content > .content-para-icon > .para-icons {
+        display: flex;
+        gap: 10px;
+    }
+}
+@media (min-width: 1001px) and (max-width: 1100px) {
+    .about-our-company {
+        display: flex;
+        height: auto;
+        padding: 100px 10px;
+    }
+    .about-our-company > .about-company-image {
+        width: 100%;
+        padding: 0px 0px 80px 0px;
+        justify-content: center;
+    }
+    .about-our-company > .about-company-content {
+        width: 100%;
+        padding: 10px 20px 0px 0px;
+    }
+    .about-our-company > .about-company-image > .company-image1 > img {
+        width: 100%;
+        height: auto;
+        left: 0;
+        clip-path: polygon(70px 0, 0 70px, 0 100%, 100% 100%, 100% 0);
+        justify-content: center;
+        padding: 0px 10px 0px 0px;
+        max-width: 400px;
+        min-height: 300px;
+        min-width: 280px;
+    }
+    .about-our-company > .about-company-image > .company-image2  {
+        display: block;
+    }
+    .about-our-company > .about-company-image > .company-image2 > img {
+        height: auto;
+        width: 100%;
+        max-width: 400px;
+        min-width: 250px;
+        min-height: 300px;
+    }
+    .about-our-company > .about-company-content > .content-heading > h1 {
+        font-size: clamp(24px, 6vw, 32px);
+    }
+    .about-our-company > .about-company-content > .content-para-icon > .para-icons {
+        display: flex;
+        gap: 10px;
+    }
+}
+@media (min-width: 1101px) and (max-width: 1300px) {
+    .about-our-company {
+        display: flex;
+        height: auto;
+        padding: 100px 40px;
+    }
+    .about-our-company > .about-company-image {
+        width: 100%;
+        padding: 0px 0px 80px 0px;
+        justify-content: center;
+    }
+    .about-our-company > .about-company-content {
+        width: 100%;
+        padding: 10px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .about-our-company > .about-company-image > .company-image1 > img {
+        width: 100%;
+        height: auto;
+        left: 0;
+        clip-path: polygon(70px 0, 0 70px, 0 100%, 100% 100%, 100% 0);
+        justify-content: center;
+        padding: 0px 10px;
+        max-width: 400px;
+        min-width: 280px;
+        min-height: 400px;
+    }
+    .about-our-company > .about-company-image > .company-image2  {
+        display: block;
+    }
+    .about-our-company > .about-company-image > .company-image2 > img {
+        height: auto;
+        width: 100%;
+        max-width: 400px;
+        min-width: 300px;
+    }
+    .about-our-company > .about-company-content > .content-heading > h1 {
+        font-size: clamp(24px, 6vw, 32px);
+    }
+    .about-our-company > .about-company-content > .content-para-icon > .para-icons {
+        display: flex;
+        gap: 10px;
+    }
+}
+@media (min-width: 1301px) and (max-width: 1540px) {
+    .about-our-company {
+        display: flex;
+        height: auto;
+        padding: 100px 40px;
+    }
+    .about-our-company > .about-company-image {
+        width: 100%;
+        padding: 0px 0px 80px 0px;
+        justify-content: center;
+    }
+    .about-our-company > .about-company-content {
+        width: 100%;
+        padding: 10px;
+        word-wrap: break-word;
+        overflow-wrap: break-word;
+    }
+    .about-our-company > .about-company-image > .company-image1 > img {
+        width: 100%;
+        height: auto;
+        left: 0;
+        clip-path: polygon(70px 0, 0 70px, 0 100%, 100% 100%, 100% 0);
+        justify-content: center;
+        padding: 0px 10px;
+        max-width: 400px;
+        min-width: 280px;
+        min-height: 400px;
+    }
+    .about-our-company > .about-company-image > .company-image2  {
+        display: block;
+    }
+    .about-our-company > .about-company-image > .company-image2 > img {
+        height: auto;
+        width: 100%;
+        max-width: 400px;
+        min-width: 300px;
+        min-height: 380px;
+    }
+    .about-our-company > .about-company-content > .content-heading > h1 {
+        font-size: clamp(24px, 6vw, 32px);
+    }
+    .about-our-company > .about-company-content > .content-para-icon > .para-icons {
+        display: flex;
+        gap: 10px;
+    }
+}

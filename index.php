@@ -207,20 +207,23 @@
                 <p>ABOUT OUR COMPANY</p>
                 <h1>Trusted Global Supplier Of High-Quality Vacuum Furnaces</h1>
             </div>
-            <div class="content-para-icon">
+            <div data-aos="fade-right" class="content-para-icon">
                 <p>HHV Thermal Technologies Pvt. Ltd., a part of the HHV Group, brings nearly six decades of expertise in designing, developing, and manufacturing specialized vacuum furnaces. These advanced solutions serve critical industries such as Space, Aerospace, Astrophysics, Defence, Automotive, and Metallurgy, ensuring high-quality performance and reliability on an international scale.</p>
                 <div class="para-icons">
                     <div class="para-icon1">
-
+                        <img src="./assets/images/index-about-company/intro-icon1.png" alt="">
+                        <h3>Precision Engineering Thermal Solutions</h3>
                     </div>
                     <div class="para-icon2">
-
+                        <img src="./assets/images/index-about-company/space-icon.png" alt="">
+                        <h3>Solutions For Space Applications</h3>
                     </div>
                 </div>
+                <p class="animation-texts">With a fully equipped design center, HHVTT employs experienced professionals utilizing 3D design capabilities to create systems that meet global industry standards. Adhering to NADCAP certifications and CE compliance, HHVTT ensures precision, safety, and excellence in every furnace manufactured.</p>
+                <a href="#">More About Us</a>
             </div>
         </div>
     </div>
-
 
 
 
