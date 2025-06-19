@@ -1183,7 +1183,7 @@ body {
     margin-bottom: 10px;
 }
 .carousel-under-cards > .card > .content  > h3 , p , ul > li {
-    color: #0b1f3a;
+    color: #2b4c77;
 }
 
 /* responsive for the cards under container */
@@ -1250,7 +1250,7 @@ body {
     top: 100px;
 }
 .about-our-company > .about-company-content > .content-heading > h1 {
-    color: #0b1f3a;
+    color: #2b4c77;
     font-size: 42px;
     font-weight: 700;
 }
@@ -1271,7 +1271,7 @@ body {
     width: 80px;
 }
 .about-our-company > .about-company-content > .content-para-icon > .para-icons > .para-icon1 > h3 {
-    color: #0b1f3a;
+    color: #2b4c77;
 }
 .about-our-company > .about-company-content > .content-para-icon > .para-icons > .para-icon2 {
     display: flex;
@@ -1283,7 +1283,7 @@ body {
     width: 100px;
 }
 .about-our-company > .about-company-content > .content-para-icon > .para-icons > .para-icon2 > h3 {
-    color: #0b1f3a;
+    color: #2b4c77;
 }
 .about-our-company > .about-company-content > .content-para-icon > a {
     color: white;
@@ -1617,25 +1617,79 @@ body {
     .about-our-company > .about-company-content > .content-para-icon > .para-icons {
         display: flex;
         gap: 10px;
-    }
+    }   
 }
 
 
 
 /* ***************styling for the experience and products carousel container************* */
 .experience-products {
+    position: relative;
     height: 600px;
     width: 100%;
-    background-color: rgba(107, 133, 156, 0.993);
     background-image: url(./assets/images/index-experience-products/shape-1-red-lines.png);
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
 }
-
-
-
-
-
-
-
+.experience-products::before {
+    content: "";
+    background-color: rgba(164, 189, 211, 0.5);
+    z-index: 0;
+    position: absolute;
+    inset: 0;
+}
+.experience-products > * {
+    position: relative;
+    z-index: 1;
+}
+.experience-products > .experience-statistic > .experience > div {
+    font-size: 100px;
+    color:#2b4c77;
+    font-weight: 900;
+}
+.experience-products > .experience-statistic > .experience > h4 {
+    font-size: 18px;
+    color:#2b4c77;
+}
+.experience-products > .experience-statistic > .experience > h1 {
+    font-size: 38px;
+    color:#2b4c77;
+}
+.experience-products > .experience-statistic {
+    display: flex;
+    align-items: center;
+}
+.experience-products > .experience-statistic > .experience {
+    width: calc(100% / 2);
+}
+.experience-products > .experience-statistic > .progress {
+    width: calc(100% / 2);
+}
+.experience-products > .experience-statistic > .progress > .progress-container {
+    width: 100%;
+    background-color: #eee;
+    height: 30px;
+    border-radius: 15px;
+    overflow: hidden;
+    margin: 50px 0;
+    position: relative;
+}
+.experience-products > .experience-statistic > .progress > .progress-content > p {
+    font-weight: 600;
+    font-size: 18px;
+}
+.experience-products > .experience-statistic > .progress > .progress-container > .progress-bar {
+    height: 100%;
+    width: 0;
+    background-color:#2b4c77; /* Tailwind green-500 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    transition: width 0.2s linear;
+}
 
 
 
