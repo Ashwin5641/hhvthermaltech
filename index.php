@@ -230,12 +230,23 @@
     <div class="experience-products">
         <div class="experience-statistic">
             <div class="experience">
-                <h1>1+</h1>
-                <h4>Years of experience</h4>
+                <div id="counter" data-target="60">0</div>
+                <h4>Years of Experience</h4>
+                <h1>Delivering advanced vacuum thermal solutions for your success</h1>
             </div>
-            <div class="statistic">
+            <div class="progress">
+                <div class="progress-content">
+                    <p>Driving innovation in high-temperature processing, we provide industry-leading expertise and fully integrated vacuum furnace solutions that empower companies in demanding sectors to achieve consistent metallurgical results, improve operational efficiency, and stay competitive in a rapidly evolving global marketplace.</p>
+                </div>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar">
+                        <span id="progressText">0%</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="products-carousel">
 
-            </div>
         </div>
     </div>
 
@@ -246,12 +257,75 @@
         AOS.init();
     </script>
 
-    <!-- -------------script for the scroll reveal js-------------  -->
-    <!-- <script src="https://unpkg.com/scrollreveal"></script>
-    <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <!-- script for the experience and statistic auto increment -->
+    
+    <!-- experience auto increment script -->
     <script>
-        ScrollReveal().reveal('.scrollreveal'), { delay: 2000 };
-    </script> -->
+        const counter = document.getElementById('counter');
+        const target = +counter.getAttribute('data-target');
+        let started = false;
+
+        const animateCounter = () => {
+            let current = 0;
+            const speed = 15;
+            const increment = Math.ceil(target / 60);
+
+            const update = () => {
+                current += increment;
+                if (current >= target) {
+                    counter.textContent = target + '+';
+                } else {
+                    counter.textContent = current;
+                    requestAnimationFrame(update);
+                }
+            };
+
+            update();
+        };
+
+        const counterObserver = new IntersectionObserver(entries => {
+            if (entries[0].isIntersecting && !started) {
+                started = true;
+                animateCounter();
+                counterObserver.disconnect();
+            }
+        }, {
+            threshold: 0.6
+        });
+
+        counterObserver.observe(counter);
+    </script>
+
+    <!-- statistic auto increment script -->
+    <script>
+        const progressBar = document.getElementById('progressBar');
+        const progressText = document.getElementById('progressText');
+
+        const animateProgress = (targetPercent) => {
+            let current = 0;
+            const interval = setInterval(() => {
+                if (current >= targetPercent) {
+                    clearInterval(interval);
+                } else {
+                    current++;
+                    progressBar.style.width = `${current}%`;
+                    progressText.textContent = `${current}%`;
+                }
+            }, 20);
+        };
+
+        const progressObserver = new IntersectionObserver(entries => {
+            if (entries[0].isIntersecting) {
+                animateProgress(80);
+                progressObserver.disconnect();
+            }
+        }, {
+            threshold: 0.5
+        });
+
+        progressObserver.observe(progressBar);
+    </script>
+
 </body>
 
 </html>
