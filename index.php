@@ -37,6 +37,10 @@
 
     <!-- link for the AOS animations on scroll -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+    <!-- swiper.js cdn link for the products carousel -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css"/>
+
 </head>
 
 <body>
@@ -245,8 +249,115 @@
                 </div>
             </div>
         </div>
-        <div class="products-carousel">
-
+        <div class="products-second-bg">
+            <div class="products-first-bg">
+                <div class="products-carousel swiper">
+                    <div class="products-cards-list swiper-wrapper">
+                        <div class="products-card-items swiper-slide">
+                            <a href="#" class="card-links">
+                                <img src="./assets/images/index-products-carousel/product1.png" alt="">
+                            </a>
+                            <div class="card-title">
+                                <p>Vacuum Heat Treatment Furnaces</p>
+                            </div>
+                            <div class="button">
+                                <a href="#">Know More</a>
+                            </div>
+                        </div>
+                        <div class="products-card-items swiper-slide">
+                            <a href="#" class="card-links">
+                                <img src="./assets/images/index-products-carousel/product2.png" alt="">
+                            </a>
+                            <div class="card-title">
+                                <p>Vacuum Brazing Furnaces</p>
+                            </div>
+                            <div class="button">
+                                <a href="#">Know More</a>
+                            </div>
+                        </div>
+                        <div class="products-card-items swiper-slide">
+                            <a href="#" class="card-links">
+                                <img src="./assets/images/index-products-carousel/product3.png" alt="">
+                            </a>
+                            <div class="card-title">
+                                <p>Vacuum Hot Presses</p>
+                            </div>
+                            <div class="button">
+                                <a href="#">Know More</a>
+                            </div>
+                        </div>
+                        <div class="products-card-items swiper-slide">
+                            <a href="#" class="card-links">
+                                <img src="./assets/images/index-products-carousel/product4.png" alt="">
+                            </a>
+                            <div class="card-title">
+                                <p>Vacuum Aluminium Brazing Furnaces</p>
+                            </div>
+                            <div class="button">
+                                <a href="#">Know More</a>
+                            </div>
+                        </div>
+                        <div class="products-card-items swiper-slide">
+                            <a href="#" class="card-links">
+                                <img src="./assets/images/index-products-carousel/product5.png" alt="">
+                            </a>
+                            <div class="card-title">
+                                <p>Vacuum Induction Melting and Casting Furnaces</p>
+                            </div>
+                            <div class="button">
+                                <a href="#">Know More</a>
+                            </div>
+                        </div>
+                        <div class="products-card-items swiper-slide">
+                            <a href="#" class="card-links">
+                                <img src="./assets/images/index-products-carousel/product6.png" alt="">
+                            </a>
+                            <div class="card-title">
+                                <p>CVD,CVI and Graphitization Furnaces</p>
+                            </div>
+                            <div class="button">
+                                <a href="#">Know More</a>
+                            </div>
+                        </div>
+                        <div class="products-card-items swiper-slide">
+                            <a href="#" class="card-links">
+                                <img src="./assets/images/index-products-carousel/product7.png" alt="">
+                            </a>
+                            <div class="card-title">
+                                <p>Vacuum Arc Re-melting Furnaces</p>
+                            </div>
+                            <div class="button">
+                                <a href="#">Know More</a>
+                            </div>
+                        </div>
+                        <div class="products-card-items swiper-slide">
+                            <a href="#" class="card-links">
+                                <img src="./assets/images/index-products-carousel/product8.png" alt="">
+                            </a>
+                            <div class="card-title">
+                                <p>Thermo Vacuum Systems</p>
+                            </div>
+                            <div class="button">
+                                <a href="#">Know More</a>
+                            </div>
+                        </div>
+                        <div class="products-card-items swiper-slide">
+                            <a href="#" class="card-links">
+                                <img src="./assets/images/index-products-carousel/product9.png" alt="">
+                            </a>
+                            <div class="card-title">
+                                <p>Vacuum Ovens</p>
+                            </div>
+                            <div class="button">
+                                <a href="#">Know More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-pagination"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -324,6 +435,51 @@
         });
 
         progressObserver.observe(progressBar);
+    </script>
+
+
+    <!-- script for the products carousel using swiper.js cdn link -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.products-carousel', {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        loop: true,
+        pagination: {
+            el: '.swiper-pagination',
+            clickable: true
+        },
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev'
+        },
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },
+        breakpoints: {
+            // when window width is >= 1200px
+            1200: {
+            slidesPerView: 4,
+            spaceBetween: 30
+            },
+            // when window width is >= 992px
+            992: {
+            slidesPerView: 3,
+            spaceBetween: 20
+            },
+            // when window width is >= 768px
+            768: {
+            slidesPerView: 2,
+            spaceBetween: 15
+            },
+            // when window width is < 768px
+            0: {
+            slidesPerView: 1,
+            spaceBetween: 10
+            }
+        }
+        });
     </script>
 
 </body>

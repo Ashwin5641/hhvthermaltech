@@ -1625,40 +1625,42 @@ body {
 /* ***************styling for the experience and products carousel container************* */
 .experience-products {
     position: relative;
-    height: 600px;
-    width: 100%;
-    background-image: url(./assets/images/index-experience-products/shape-1-red-lines.png);
-    padding: 60px;
     display: flex;
     flex-direction: column;
-}
-.experience-products::before {
-    content: "";
-    background-color: rgba(164, 189, 211, 0.5);
-    z-index: 0;
-    position: absolute;
-    inset: 0;
-}
-.experience-products > * {
-    position: relative;
-    z-index: 1;
+    align-items: center;
 }
 .experience-products > .experience-statistic > .experience > div {
     font-size: 100px;
-    color:#2b4c77;
+    color: #0b1f3a;
     font-weight: 900;
 }
 .experience-products > .experience-statistic > .experience > h4 {
     font-size: 18px;
-    color:#2b4c77;
+    color: #0b1f3a;
 }
 .experience-products > .experience-statistic > .experience > h1 {
     font-size: 38px;
-    color:#2b4c77;
+    color: #0b1f3a;
 }
 .experience-products > .experience-statistic {
     display: flex;
     align-items: center;
+    height: 600px;
+    width: 100%;
+    background-image: url(./assets/images/index-experience-products/shape-1-red-lines.png);
+    background-color: rgba(62, 117, 165, 0.863);
+    padding: 40px 60px 80px;
+}
+.experience-products > .experience-statistic::before {
+    /* content: "";
+    background-color: rgba(164, 189, 211, 0.5);
+    z-index: 0;
+    position: absolute;
+    inset: 0; */
+}
+.experience-products > .experience-statistic > * {
+    position: relative;
+    z-index: 1;
 }
 .experience-products > .experience-statistic > .experience {
     width: calc(100% / 2);
@@ -1676,13 +1678,15 @@ body {
     position: relative;
 }
 .experience-products > .experience-statistic > .progress > .progress-content > p {
-    font-weight: 600;
+    font-weight: 900;
     font-size: 18px;
+    text-align: justify;
+    color: #0b1f3a;
 }
 .experience-products > .experience-statistic > .progress > .progress-container > .progress-bar {
     height: 100%;
     width: 0;
-    background-color:#2b4c77; /* Tailwind green-500 */
+    background-color: #d92929; /* Tailwind green-500 */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1690,9 +1694,91 @@ body {
     font-weight: bold;
     transition: width 0.2s linear;
 }
-
-
-
-
-
-
+.experience-products > .products-second-bg {
+    height: 700px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.experience-products > .products-second-bg > .products-first-bg {
+    height: 700px;
+    width: 90%;
+    background-color: #1d3557;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+}
+.experience-products > .products-second-bg > .products-first-bg > .products-carousel {
+    width: 100%;
+    max-width: 1300px;
+    height: 500px;
+    margin-top: -150px;
+}
+.experience-products > .products-second-bg > .products-first-bg > .products-carousel > .products-cards-list {
+    display: flex;
+    
+}
+.experience-products > .products-second-bg > .products-first-bg > .products-carousel > .products-cards-list > .products-card-items {
+    height: 400px;
+    width: auto; /* let Swiper handle the width */
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+.experience-products > .products-second-bg > .products-first-bg > .products-carousel > .products-cards-list > .products-card-items > a > img {
+    height: 250px;
+    width: 100%;
+    border-radius: 20px 20px 0px 0px;
+}
+.experience-products > .products-second-bg > .products-first-bg > .products-carousel > .products-cards-list > .products-card-items > .card-title {
+    height: 80px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.experience-products > .products-second-bg > .products-first-bg > .products-carousel > .products-cards-list > .products-card-items > .card-title > p {
+    color: #0b1f3a;
+    font-weight: 500;
+    padding: 20px 10px;
+    text-align: center;
+}
+.experience-products > .products-second-bg > .products-first-bg > .products-carousel > .products-cards-list > .products-card-items > .button {
+    display: flex;
+    justify-content: center;
+}
+.experience-products > .products-second-bg > .products-first-bg > .products-carousel > .products-cards-list > .products-card-items > .button > a {
+    background-color: #e63946;
+    padding: 12px 28px;
+    border-radius: 5px;
+    margin: 0px 10px;
+    color: white;
+    transition: color 0.5s ease-in-out;
+    position: relative;
+    z-index: 0;
+}
+.experience-products > .products-second-bg > .products-first-bg > .products-carousel > .products-cards-list > .products-card-items > .button > a::before,
+.experience-products > .products-second-bg > .products-first-bg > .products-carousel > .products-cards-list > .products-card-items > .button > a::after {
+    content: '';
+    width: 0;
+    height: 0;
+    background-color: #1d3557;
+    position: absolute;
+    transition: width 0.5s ease-in-out, height 0.5s ease-in-out;
+    overflow: hidden;
+    z-index: -1;
+}
+.experience-products > .products-second-bg > .products-first-bg > .products-carousel > .products-cards-list > .products-card-items > .button > a::before {
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+}
+.experience-products > .products-second-bg > .products-first-bg > .products-carousel > .products-cards-list > .products-card-items > .button > a::after {
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom right;
+}
+.experience-products > .products-second-bg > .products-first-bg > .products-carousel > .products-cards-list > .products-card-items > .button > a:hover::before,
+.experience-products > .products-second-bg > .products-first-bg > .products-carousel > .products-cards-list > .products-card-items > .button > a:hover::after {
+    height: 100%;
+    width: 100%;
+}
