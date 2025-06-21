@@ -325,6 +325,30 @@ body {
     grid-template-columns: 1fr 1fr;
     padding: 30px 50px 150px 50px;
     align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+.carousel::before {
+    content: '';
+    position: absolute;
+    background-image: url(./assets/images/world.png);
+    background-repeat: no-repeat;
+    background-position-x: left;
+    opacity: 0.5;
+    z-index: 0;
+    inset: 0;
+}
+.carousel::after {
+    content: '';
+    position: absolute;
+    /* background-image: url(./assets/images/shape-1.png); */
+    opacity: 0.5;
+    z-index: 1;
+    inset: 0;
+}
+.carousel > * {
+    position: relative;
+    z-index: 2;
 }
 .carousel > .carousel-content > h1{
     color: white;
@@ -1138,6 +1162,7 @@ body {
     padding: 0 110px 50px 110px;
     position: relative;
     margin-top: -60px;
+    z-index: 4;
 }
 
 .carousel-under-cards > .card {
@@ -1781,4 +1806,59 @@ body {
 .experience-products > .products-second-bg > .products-first-bg > .products-carousel > .products-cards-list > .products-card-items > .button > a:hover::after {
     height: 100%;
     width: 100%;
+}
+
+
+
+/* responsive for the experience and the products, products carousel and the custom systems  */
+@media (min-width: 320px) and (max-width: 500px) {
+    .experience-products > .experience-statistic {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 10px 10px 150px 10px;
+        gap: 20px;
+    }
+    .experience-products > .experience-statistic > .experience {
+        width: 100%;
+        height: auto;
+    }
+    .experience-products > .experience-statistic > .experience  > h1{
+        font-size: clamp(26px, 10vw, 28px);
+    }
+    .experience-products > .experience-statistic > .progress {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (min-width: 501px) and (max-width: 970px) {
+    .experience-products > .experience-statistic {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        padding: 10px 50px 150px 50px;
+        gap: 20px;
+    }
+    .experience-products > .experience-statistic > .experience {
+        width: 100%;
+        height: auto;
+    }
+    .experience-products > .experience-statistic > .experience  > h1{
+        font-size: clamp(26px, 10vw, 28px);
+    }
+    .experience-products > .experience-statistic > .progress {
+        width: 100%;
+        height: auto;
+    }
+}
+@media (min-width: 1110px) and (max-width: 1470px) {
+    .experience-products > .experience-statistic {
+        display: flex;
+        height: auto;
+        width: 100%;
+        padding: 10px 50px 180px 50px;
+        gap: 20px;
+    }
 }

@@ -473,10 +473,35 @@
             slidesPerView: 2,
             spaceBetween: 15
             },
+            700: {
+            slidesPerView: 1.7,
+            spaceBetween: 18,
+            centeredSlides: true,
+            },
+            600: {
+            slidesPerView: 1.7,
+            spaceBetween: 18,
+            centeredSlides: true,
+            },
+            500: {
+            slidesPerView: 1.3,
+            spaceBetween: 18,
+            centeredSlides: true,
+            },
+            400: {
+            slidesPerView: 1.2,
+            spaceBetween: 15,
+            centeredSlides: true,
+            },
+            320: {
+            slidesPerView: 1,
+            spaceBetween: 15,
+            navigation: false,
+            },
             // when window width is < 768px
             0: {
             slidesPerView: 1,
-            spaceBetween: 10
+            spaceBetween: 10,
             }
         }
         });
