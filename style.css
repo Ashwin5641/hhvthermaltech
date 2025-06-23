@@ -1720,18 +1720,19 @@ body {
     transition: width 0.2s linear;
 }
 .experience-products > .products-second-bg {
-    height: 700px;
+    height: 1100px;
     width: 100%;
     display: flex;
     justify-content: center;
 }
 .experience-products > .products-second-bg > .products-first-bg {
-    height: 700px;
+    height: 1100px;
     width: 90%;
-    background-color: #1d3557;
+    background-color:#1d3557;
     border-radius: 50px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    background-image: url(./assets/images/index-experience-products/shape-1.png);
 }
 .experience-products > .products-second-bg > .products-first-bg > .products-carousel {
     width: 100%;
@@ -1807,7 +1808,86 @@ body {
     height: 100%;
     width: 100%;
 }
-
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems {
+    display: flex;
+    flex-direction: column;
+    height: 900px;
+    justify-content: space-around;
+    align-items: center;
+    padding-bottom: 50px;
+}
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-systems-title > h1 {
+    color: white;
+    font-weight: 900;
+    font-size: 42px;
+}
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards > .card {
+    height: 500px;
+    width: 500px;
+    background-color: white;
+    border-radius: 20px;
+}
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards > .card > .card-image {
+    height: 400px;
+    width: 100%;
+}
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards > .card > .card-image > img {
+    height: auto;
+    width: 100%;
+    background-size: cover;
+    border-radius: 20px 20px 0px 0px;
+}
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards > .card > .card-content {
+    text-align: center;
+    color:#2b4c77;
+    font-size: 18px;
+    font-weight: 400;
+}
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems > .view-custom-systems {
+    width: 100%;
+    text-align: center;
+}
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems > .view-custom-systems > a {
+    color: white;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: #d92929;
+    padding: 15px 20px;
+    border-radius: 5px;
+    position: relative;
+    transition: background-color 0.5s ease-in-out;
+    z-index: 1;
+}
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems > .view-custom-systems > a::before,
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems > .view-custom-systems > a::after {
+    content: '';
+    position: absolute;
+    height: 0;
+    width: 0;
+    background-color: #0b1f3a;
+    transition: height 0.5s ease-in-out, width 0.5s ease-in-out;
+    z-index: -1;
+}
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems > .view-custom-systems > a::before {
+    top: 0;
+    left: 0;
+    transform-origin: top left;
+}
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems > .view-custom-systems > a::after {
+    bottom: 0;
+    right: 0;
+    transform-origin: bottom right;
+}
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems > .view-custom-systems > a:hover:before,
+.experience-products > .products-second-bg > .products-first-bg > .custom-systems > .view-custom-systems > a:hover::after {
+    width: 100%;
+    height: 100%;
+}
 
 
 /* responsive for the experience and the products, products carousel and the custom systems  */
@@ -1830,6 +1910,109 @@ body {
     .experience-products > .experience-statistic > .progress {
         width: 100%;
         height: auto;
+    }   
+    .experience-products > .products-second-bg {
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg {
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems {
+        height: auto;
+        padding: 60px 0px;
+        gap: 50px;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-systems-title > h1 {
+        font-size: 30px;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards {
+        flex-direction: column;
+        padding: 0px 10px;
+    }
+    .experience-products > .products-second-bg > .products-first-bg  {
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards > .card {
+        width: 100%;
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards > .card > .card-image {
+        width: 100%;
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards > .card > .card-image {
+        height: auto;
+        width: 100%;
+    }
+}
+@media (min-width: 501px) and (max-width: 700px) {  
+    .experience-products > .products-second-bg {
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg {
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems {
+        height: auto;
+        padding: 60px 0px;
+        gap: 50px;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-systems-title > h1 {
+        font-size: 30px;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards {
+        flex-direction: column;
+        padding: 0px 20px;
+    }
+    .experience-products > .products-second-bg > .products-first-bg  {
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards > .card {
+        width: 100%;
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards > .card > .card-image {
+        width: 100%;
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards > .card > .card-image {
+        height: auto;
+        width: 100%;
+    }
+}
+@media (min-width: 701px) and (max-width: 1230px) {  
+    .experience-products > .products-second-bg {
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg {
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems {
+        height: auto;
+        padding: 60px 0px;
+        gap: 50px;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-systems-title > h1 {
+        font-size: 30px;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards {
+        flex-direction: row;
+        padding: 0px 20px;
+    }
+    .experience-products > .products-second-bg > .products-first-bg  {
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards > .card {
+        width: 100%;
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards > .card > .card-image {
+        width: 100%;
+        height: auto;
+    }
+    .experience-products > .products-second-bg > .products-first-bg > .custom-systems > .custom-system-cards > .card > .card-image {
+        height: auto;
+        width: 100%;
     }
 }
 @media (min-width: 501px) and (max-width: 970px) {

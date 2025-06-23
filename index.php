@@ -249,7 +249,7 @@
                 </div>
             </div>
         </div>
-        <div class="products-second-bg">
+        <div class="products-second-bg">    
             <div class="products-first-bg">
                 <div class="products-carousel swiper">
                     <div class="products-cards-list swiper-wrapper">
@@ -356,6 +356,32 @@
                     <div class="swiper-pagination"></div>
                     <div class="swiper-button-prev"></div>
                     <div class="swiper-button-next"></div>
+                </div>
+                <div class="custom-systems">
+                    <div class="custom-systems-title">
+                        <h1 data-aos="fade-left">Custom Systems</h1>
+                    </div>
+                    <div class="custom-system-cards">
+                        <a href="#" class="special-systems card">
+                            <div class="card-image">
+                                <img src="./assets/images/index-custom-systems/card-1.png" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h3>Special Systems</h3>
+                            </div>  
+                        </a>
+                        <a href="#" class="special-projects card">
+                            <div class="card-image">
+                                <img src="./assets/images/index-custom-systems/card-2.png" alt="">
+                            </div>
+                            <div class="card-content">
+                                <h3>Special Projects</h3>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="view-custom-systems">
+                        <a href="#">View Custom Systems</a>
+                    </div>
                 </div>
             </div>
         </div>
