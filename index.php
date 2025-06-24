@@ -32,6 +32,12 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     
     
+    <!-- Roboto -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
     <!-- --------------links for the icons----------------------->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -387,6 +393,159 @@
         </div>
     </div>
 
+
+    <!-- ------------------start of the news and new developments--------------------  -->
+    <div class="news-container">
+       <div class="news-title-button">
+            <div class="news-title">
+                <h3>FROM THE BLOG</h3>
+                <h1>NEWS AND ARTICLES</h1>
+            </div>
+            <div class="news-button">
+                <a href="#">DISCOVER MORE</a>
+            </div>
+       </div>
+       <div class="news-cards">
+            <div class="card">
+                <a href="#">
+                    <div class="card-image">
+                        <img src="./assets/images/index-new-devlops/image1.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-date">
+                            <small>4 AUG 2023</small>
+                        </div>
+                        <div class="card-title">
+                           <h4>HHV’s DSS Furnace to power solar module affordability</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="card-image">
+                        <img src="./assets/images/index-new-devlops/image2.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-date">
+                            <small>14 Jun 2023</small>
+                        </div>
+                        <div class="card-title">
+                            <h4>HHV announces demerger plan to create simplified corporate structure</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="card">
+                <a href="#">
+                    <div class="card-image">
+                        <img src="./assets/images/index-new-devlops/image3.png" alt="">
+                    </div>
+                    <div class="card-content">
+                        <div class="card-date">
+                            <small>1 Dec 2022</small>
+                        </div>
+                        <div class="card-title">
+                            <h4>HHV Institutes SV Narasaiah Auditorium at IISc Bangalore</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+       </div>
+    </div>
+
+
+
+
+
+
+
+
+
+
+    <footer>
+        <div class="footer-links-content">
+            <div class="logo-mail-icons">
+                <div class="logo">
+                    <a href="./index.php"><img src="./assets/images/logo.png" alt=""></a>
+                </div>
+                <div class="title">
+                    <p>India's Premier Thermal Vacuum Technology Group</p>
+                </div>
+                <div class="mail">
+                    <h3>Subcribe Now</h3>
+                    <input type="email" placeholder="Your Mail"><span><i class="fa-solid fa-paper-plane"></i></span>
+                </div>
+                <div class="icons">
+                   <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+                   </ul>
+                </div>
+            </div>
+            <div class="useful-page-links">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li><a href="#">Products</a></li>
+                    <li><a href="#">Custom Systems</a></li>
+                    <li><a href="#">Resource Centre</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="products-link">
+                <h3>Products Links</h3>
+                <ul>
+                    <li><a href="#">Heat Treatment Furnaces</a></li>
+                    <li><a href="#">Vacuum Brazing Furnaces</a></li>
+                    <li><a href="#">Vacuum Aluminium Brazing Furnaces</a></li>
+                    <li><a href="#">Vacuum Hot Presses</a></li>
+                    <li><a href="#">Vacuum Ovens</a></li>
+                    <li><a href="#">Thermo Vacuum Furnaces</a></li>
+                    <li><a href="#">Induction Melting and Casting Furnaces</a></li>
+                </ul>
+            </div>
+            <div class="contact-icons">
+                <h3>Contact Us</h3>
+                <div class="contact">
+                    <ul>
+                        <li>
+                            <ul class="title">
+                                <li class="big-icon"><i class="fa-solid fa-envelope"></i></li>
+                                <li>
+                                    <h4>Mail Us:</h4>
+                                    <p>example4433@gmail.com</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="title">
+                                <li class="big-icon location-icon"><i class="fa-solid fa-location-dot"></i></li>
+                                <li>
+                                    <h4>Address:</h4>
+                                    <p> No. 17, Phase 1, Peenya, Bengaluru, India</p>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <ul class="title">
+                                <li class="big-icon"><i class="fa-solid fa-phone"></i></li>
+                                <li>
+                                    <h4>Phone:</h4>
+                                    <p>91+ &nbsp;9876543210</p>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyrights">
+            <p>©Copyright 2025 All Rights Reserved </p>
+        </div>
+    </footer>
 
     <!-- ---------script for the AOS animations on scroll--------- -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
