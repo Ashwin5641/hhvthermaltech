@@ -25,13 +25,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
+
     <!-- Poppins -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    
-    
+
+
     <!-- Roboto -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -45,7 +45,7 @@
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
     <!-- swiper.js cdn link for the products carousel -->
-    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@11/swiper-bundle.min.css" />
 
 </head>
 
@@ -202,7 +202,7 @@
     </div>
 
     <!-- *********************start of the about our company****************  -->
-    
+
     <div class="about-our-company">
         <div class="about-company-image">
             <div data-aos="fade-right" class="company-image1">
@@ -255,7 +255,7 @@
                 </div>
             </div>
         </div>
-        <div class="products-second-bg">    
+        <div class="products-second-bg">
             <div class="products-first-bg">
                 <div class="products-carousel swiper">
                     <div class="products-cards-list swiper-wrapper">
@@ -374,7 +374,7 @@
                             </div>
                             <div class="card-content">
                                 <h3>Special Systems</h3>
-                            </div>  
+                            </div>
                         </a>
                         <a href="#" class="special-projects card">
                             <div class="card-image">
@@ -396,7 +396,7 @@
 
     <!-- ------------------start of the news and new developments--------------------  -->
     <div class="news-container">
-       <div class="news-title-button">
+        <div class="news-title-button">
             <div class="news-title">
                 <h3>FROM THE BLOG</h3>
                 <h1>NEWS AND ARTICLES</h1>
@@ -404,8 +404,8 @@
             <div class="news-button">
                 <a href="#">DISCOVER MORE</a>
             </div>
-       </div>
-       <div class="news-cards">
+        </div>
+        <div class="news-cards">
             <div class="card">
                 <a href="#">
                     <div class="card-image">
@@ -416,7 +416,7 @@
                             <small>4 AUG 2023</small>
                         </div>
                         <div class="card-title">
-                           <h4>HHV’s DSS Furnace to power solar module affordability</h4>
+                            <h4>HHV’s DSS Furnace to power solar module affordability</h4>
                         </div>
                     </div>
                 </a>
@@ -451,7 +451,7 @@
                     </div>
                 </a>
             </div>
-       </div>
+        </div>
     </div>
 
 
@@ -465,16 +465,14 @@
         </div>
         <div class="testimonial-cards">
             <div class="swiper-wrapper">
-                <div class="swiper-slide card">Slide 1</div>
-                <div class="swiper-slide card">Slide 2</div>
-                <div class="swiper-slide card">Slide 3</div>
-                <div class="swiper-slide card">Slide 4</div>
+                <div class="swiper-slide card"></div>
+                <div class="swiper-slide card"></div>
+                <div class="swiper-slide card"></div>
+                <div class="swiper-slide card"></div>
             </div>
-            <!-- Pagination -->
-            <div class="swiper-pagination"></div>
             <!-- Navigation -->
-            <div class="testimonial-button-prev"></div>
-            <div class="testimonial-button-next"></div>
+            <div class="testimonial-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="testimonial-button-next"><i class="fa-solid fa-arrow-right"></i></div>
         </div>
     </div>
 
@@ -494,12 +492,12 @@
                     <input type="email" placeholder="Your Mail"><span><i class="fa-solid fa-paper-plane"></i></span>
                 </div>
                 <div class="icons">
-                   <ul>
+                    <ul>
                         <li><a href="#"><i class="fa-brands fa-facebook"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
                         <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
-                   </ul>
+                    </ul>
                 </div>
             </div>
             <div class="useful-page-links">
@@ -571,7 +569,7 @@
     </script>
 
     <!-- script for the experience and statistic auto increment -->
-    
+
     <!-- experience auto increment script -->
     <script>
         const counter = document.getElementById('counter');
@@ -644,90 +642,87 @@
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
         const productSwiper = new Swiper('.products-carousel', {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        loop: true,
-        pagination: {
-            el: '.swiper-pagination',
-            clickable: true   
-        },
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev'
-        },
-        autoplay: {
-            delay: 3000,
-            disableOnInteraction: false
-        },
-        breakpoints: {
-            // when window width is >= 1200px
-            1200: {
             slidesPerView: 4,
-            spaceBetween: 30
+            spaceBetween: 30,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true
             },
-            // when window width is >= 992px
-            992: {
-            slidesPerView: 3,
-            spaceBetween: 20
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev'
             },
-            // when window width is >= 768px
-            768: {
-            slidesPerView: 2,
-            spaceBetween: 15
+            autoplay: {
+                delay: 3000,
+                disableOnInteraction: false
             },
-            700: {
-            slidesPerView: 1.7,
-            spaceBetween: 18,
-            centeredSlides: true,
-            },
-            600: {
-            slidesPerView: 1.7,
-            spaceBetween: 18,
-            centeredSlides: true,
-            },
-            500: {
-            slidesPerView: 1.3,
-            spaceBetween: 18,
-            centeredSlides: true,
-            },
-            400: {
-            slidesPerView: 1.2,
-            spaceBetween: 15,
-            centeredSlides: true,
-            },
-            320: {
-            slidesPerView: 1,
-            spaceBetween: 15,
-            navigation: false,
-            },
-            // when window width is < 768px
-            0: {
-            slidesPerView: 1,
-            spaceBetween: 10,
+            breakpoints: {
+                // when window width is >= 1200px
+                1200: {
+                    slidesPerView: 4,
+                    spaceBetween: 30
+                },
+                // when window width is >= 992px
+                992: {
+                    slidesPerView: 3,
+                    spaceBetween: 20
+                },
+                // when window width is >= 768px
+                768: {
+                    slidesPerView: 2,
+                    spaceBetween: 15
+                },
+                700: {
+                    slidesPerView: 1.7,
+                    spaceBetween: 18,
+                    centeredSlides: true,
+                },
+                600: {
+                    slidesPerView: 1.7,
+                    spaceBetween: 18,
+                    centeredSlides: true,
+                },
+                500: {
+                    slidesPerView: 1.3,
+                    spaceBetween: 18,
+                    centeredSlides: true,
+                },
+                400: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 15,
+                    centeredSlides: true,
+                },
+                320: {
+                    slidesPerView: 1,
+                    spaceBetween: 15,
+                    navigation: false,
+                },
+                // when window width is < 768px
+                0: {
+                    slidesPerView: 1,
+                    spaceBetween: 10,
+                }
             }
-        }
         });
     </script>
 
     <!-- --------script for the testnimial container------- -->
     <script>
-        var testimonialSwiper = new Swiper(".testimonial-cards", {
-        spaceBetween: 30,
-        centeredSlides: true,
-        autoplay: {
-            delay: 2500,
-            disableOnInteraction: false,
-        },
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        navigation: {
-            nextEl: ".testimonial-button-next",
-            prevEl: ".testimonial-button-prev",
-        },
+        var swiper = new Swiper(".testimonial-cards", {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true, // enable infinite loop
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+                nextEl: ".testimonial-button-next",
+                prevEl: ".testimonial-button-prev",
+            },
         });
-  </script>
+    </script>
 </body>
 
 </html>

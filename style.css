@@ -2442,14 +2442,14 @@ footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > 
 
 /* responsive for the footer section of mobile and tab screens */
 .testimonial-container {
-    height: 600px;
+    height: 700px;
     width: 100%;
     background-color: #faf9fb;
     position: relative;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    gap: 30px;
+    justify-content: space-around;
+    align-items: center;
 }
 .testimonial-container::before {
     content: '';
@@ -2485,12 +2485,6 @@ footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > 
     position: relative;
     z-index: 2;
 }
-.testimonial-container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
 .testimonial-container > .testimonial-title {
     display: flex;
     flex-direction: column;
@@ -2500,19 +2494,37 @@ footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > 
     color:#e63946;
 }
 .testimonial-container > .testimonial-title > h1 {
-    color: #0b1f3a;
     font-weight: 700;
     font-size: 42px;
     font-family: "Montserrat";
 }
 .testimonial-container > .testimonial-cards {
     height: 350px;
-    width: 700px;     
+    width: 700px;
+    overflow: hidden;
 }
 .testimonial-container > .testimonial-cards > .swiper-wrapper > .card {
-    height: 300px;
-    width: 500px;
     background-color: #eee;
     display: flex;
-    gap: 20px;
+    border-radius: 20px;
+    border-left: 7px solid #e63946;
+}
+.testimonial-container>.testimonial-cards>.testimonial-button-prev,
+.testimonial-container>.testimonial-cards>.testimonial-button-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    cursor: pointer;
+    font-size: 2rem;
+    color: #333;
+    user-select: none;
+}
+
+.testimonial-container>.testimonial-cards>.testimonial-button-prev {
+    left: 10px;
+}
+
+.testimonial-container>.testimonial-cards>.testimonial-button-next {
+    right: 10px;
 }
