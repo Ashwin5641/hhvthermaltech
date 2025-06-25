@@ -461,6 +461,20 @@
         <div class="testimonial-title">
             <h4>Our Testmonial</h4>
             <h1>What our clients say about us</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium eos autem soluta temporibus.</p>
+        </div>
+        <div class="testimonial-cards">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide card">Slide 1</div>
+                <div class="swiper-slide card">Slide 2</div>
+                <div class="swiper-slide card">Slide 3</div>
+                <div class="swiper-slide card">Slide 4</div>
+            </div>
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+            <!-- Navigation -->
+            <div class="testimonial-button-prev"></div>
+            <div class="testimonial-button-next"></div>
         </div>
     </div>
 
@@ -629,13 +643,13 @@
     <!-- script for the products carousel using swiper.js cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper('.products-carousel', {
+        const productSwiper = new Swiper('.products-carousel', {
         slidesPerView: 4,
         spaceBetween: 30,
         loop: true,
         pagination: {
             el: '.swiper-pagination',
-            clickable: true
+            clickable: true   
         },
         navigation: {
             nextEl: '.swiper-button-next',
@@ -695,6 +709,25 @@
         });
     </script>
 
+    <!-- --------script for the testnimial container------- -->
+    <script>
+        var testimonialSwiper = new Swiper(".testimonial-cards", {
+        spaceBetween: 30,
+        centeredSlides: true,
+        autoplay: {
+            delay: 2500,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".testimonial-button-next",
+            prevEl: ".testimonial-button-prev",
+        },
+        });
+  </script>
 </body>
 
 </html>

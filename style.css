@@ -2446,16 +2446,19 @@ footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > 
     width: 100%;
     background-color: #faf9fb;
     position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
 }
 .testimonial-container::before {
     content: '';
-    background-image: url(./assets/images/index-testimonial/shape-1.png);
+    background-image: url(./assets/images/index-testimonial/shape-3.png);
     position: absolute;
     height: 100%;
     width: 100%;
-    background-repeat: no-repeat, no-repeat;
-    background-position: -150px -150px, 250px 150px;
-    background-size: auto, 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
     z-index: 0;
     opacity: .27;
     animation-name: movingShape;
@@ -2467,21 +2470,7 @@ footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > 
 }
 .testimonial-container::after {
     content: '';
-    background-image: url(./assets/images/index-testimonial/shape-2.png);
     position: absolute;
-    height: 100%;
-    width: 100%;
-    background-repeat: no-repeat, no-repeat;
-    background-position: 250px 150px;
-    background-size: auto, 100% 100%;
-    z-index: 0;
-    opacity: .27;
-    animation-name: movingShape;
-    animation-timing-function: ease-in-out;
-    animation-duration: 7s;
-    animation-iteration-count: infinite;
-    animation-play-state: running;
-    animation-direction: alternate;
 
 }
 @keyframes movingShape {
@@ -2496,6 +2485,17 @@ footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > 
     position: relative;
     z-index: 2;
 }
+.testimonial-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+.testimonial-container > .testimonial-title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 .testimonial-container > .testimonial-title > h4 {
     color:#e63946;
 }
@@ -2504,4 +2504,15 @@ footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > 
     font-weight: 700;
     font-size: 42px;
     font-family: "Montserrat";
+}
+.testimonial-container > .testimonial-cards {
+    height: 350px;
+    width: 700px;     
+}
+.testimonial-container > .testimonial-cards > .swiper-wrapper > .card {
+    height: 300px;
+    width: 500px;
+    background-color: #eee;
+    display: flex;
+    gap: 20px;
 }
