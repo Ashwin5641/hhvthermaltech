@@ -465,7 +465,9 @@
         </div>
         <div class="testimonial-cards">
             <div class="swiper-wrapper">
-                <div class="swiper-slide card"></div>
+                <div class="swiper-slide card">
+                    card1
+                </div>
                 <div class="swiper-slide card"></div>
                 <div class="swiper-slide card"></div>
                 <div class="swiper-slide card"></div>
