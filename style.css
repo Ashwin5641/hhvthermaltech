@@ -2438,3 +2438,12 @@ footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > 
 footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > li > p {
     color: #1d3557;
 }
+
+
+/* responsive for the footer section of mobile and tab screens */
+.testimonial-container {
+    height: 500px;
+    width: 100%;
+    background-color: #faf9fb;
+}
+.testimonial-container
