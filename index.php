@@ -468,9 +468,15 @@
                 <div class="swiper-slide card">
                     card1
                 </div>
-                <div class="swiper-slide card"></div>
-                <div class="swiper-slide card"></div>
-                <div class="swiper-slide card"></div>
+                <div class="swiper-slide card">
+                    card2
+                </div>
+                <div class="swiper-slide card">
+                    card3
+                </div>
+                <div class="swiper-slide card">
+                    card4
+                </div>
             </div>
             <!-- Navigation -->
             <div class="testimonial-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
