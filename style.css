@@ -2,7 +2,7 @@
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: "Roboto", sans-serif;
+    font-family: "Montserrat", sans-serif;
     font-style: normal;
 }
 
@@ -2442,8 +2442,66 @@ footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > 
 
 /* responsive for the footer section of mobile and tab screens */
 .testimonial-container {
-    height: 500px;
+    height: 600px;
     width: 100%;
     background-color: #faf9fb;
+    position: relative;
 }
-.testimonial-container
+.testimonial-container::before {
+    content: '';
+    background-image: url(./assets/images/index-testimonial/shape-1.png);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: -150px -150px, 250px 150px;
+    background-size: auto, 100% 100%;
+    z-index: 0;
+    opacity: .27;
+    animation-name: movingShape;
+    animation-timing-function: ease-in-out;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: alternate;
+}
+.testimonial-container::after {
+    content: '';
+    background-image: url(./assets/images/index-testimonial/shape-2.png);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 250px 150px;
+    background-size: auto, 100% 100%;
+    z-index: 0;
+    opacity: .27;
+    animation-name: movingShape;
+    animation-timing-function: ease-in-out;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-direction: alternate;
+
+}
+@keyframes movingShape {
+    0% {
+        background-position-y: 30%;
+    }
+    100% {
+        background-position-y: 10%;
+    }
+}
+.testimonial-container > * {
+    position: relative;
+    z-index: 2;
+}
+.testimonial-container > .testimonial-title > h4 {
+    color:#e63946;
+}
+.testimonial-container > .testimonial-title > h1 {
+    color: #0b1f3a;
+    font-weight: 700;
+    font-size: 42px;
+    font-family: "Montserrat";
+}
