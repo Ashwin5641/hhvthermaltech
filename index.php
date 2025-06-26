@@ -466,21 +466,193 @@
         <div class="testimonial-cards">
             <div class="swiper-wrapper">
                 <div class="swiper-slide card">
-                    card1
+                    <!-- card-1 -->
+                    <div class="card-inside">
+                        <div class="card-image-content">
+                            <div class="card-image">
+                                <div class="card-shape">
+                                    <img src="./assets/images/index-testimonial/customer-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-title">
+                                    <h3>FEEDBACK</h3>
+                                </div>
+                                <div class="card-content-review">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores doloremque totam vel nobis, delectus quo? At quod expedita, ea nisi dolor minima illo, a ad error iste, corporis dolores minus.</p>
+                                </div>
+                                <div class="card-name-ratings">
+                                    <div class="card-ratings">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="card-name">
+                                        <h4>Example</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="dot">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <div class="line">
+                                <li>&nbsp;</li>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- card-2 -->
                 <div class="swiper-slide card">
-                    card2
+                    <div class="card-inside">
+                        <div class="card-image-content">
+                            <div class="card-image">
+                                <div class="card-shape">
+                                    <img src="./assets/images/index-testimonial/customer-3.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-title">
+                                    <h3>FEEDBACK</h3>
+                                </div>
+                                <div class="card-content-review">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores doloremque totam vel nobis, delectus quo? At quod expedita, ea nisi dolor minima illo, a ad error iste, corporis dolores minus.</p>
+                                </div>
+                                <div class="card-name-ratings">
+                                    <div class="card-ratings">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="card-name">
+                                        <h4>Example</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="dot">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <div class="line">
+                                <li>&nbsp;</li>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- card-3 -->
                 <div class="swiper-slide card">
-                    card3
+                    <div class="card-inside">
+                        <div class="card-image-content">
+                            <div class="card-image">
+                                <div class="card-shape">
+                                    <img src="./assets/images/index-testimonial/customer-4.png" alt="">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-title">
+                                    <h3>FEEDBACK</h3>
+                                </div>
+                                <div class="card-content-review">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores doloremque totam vel nobis, delectus quo? At quod expedita, ea nisi dolor minima illo, a ad error iste, corporis dolores minus.</p>
+                                </div>
+                                <div class="card-name-ratings">
+                                    <div class="card-ratings">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="card-name">
+                                        <h4>Example</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="dot">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <div class="line">
+                                <li>&nbsp;</li>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- card-4 -->
                 <div class="swiper-slide card">
-                    card4
+                    <div class="card-inside">
+                        <div class="card-image-content">
+                            <div class="card-image">
+                                <div class="card-shape">
+                                    <img src="./assets/images/index-testimonial/customer-2.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="card-content">
+                                <div class="card-content-title">
+                                    <h3>FEEDBACK</h3>
+                                </div>
+                                <div class="card-content-review">
+                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores doloremque totam vel nobis, delectus quo? At quod expedita, ea nisi dolor minima illo, a ad error iste, corporis dolores minus.</p>
+                                </div>
+                                <div class="card-name-ratings">
+                                    <div class="card-ratings">
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                        <span><i class="fa-solid fa-star"></i></span>
+                                    </div>
+                                    <div class="card-name">
+                                        <h4>Example</h4>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <ul class="dot">
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                                <li><i class="fa-solid fa-star"></i></li>
+                            </ul>
+                            <div class="line">
+                                <li>&nbsp;</li>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <!-- Navigation -->
-            <div class="testimonial-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
-            <div class="testimonial-button-next"><i class="fa-solid fa-arrow-right"></i></div>
+            <!-- <div class="testimonial-button-prev"><i class="fa-solid fa-arrow-left"></i></div>
+            <div class="testimonial-button-next"><i class="fa-solid fa-arrow-right"></i></div> -->
         </div>
     </div>
 
@@ -509,8 +681,8 @@
                 </div>
             </div>
             <div class="useful-page-links">
-                <h3>Useful Links</h3>
                 <ul>
+                    <li style="color: #e63946;"><h3>Useful Links</h3></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">Custom Systems</a></li>
                     <li><a href="#">Resource Centre</a></li>
@@ -645,7 +817,7 @@
         progressObserver.observe(progressBar);
     </script>
 
-
+    
     <!-- script for the products carousel using swiper.js cdn link -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
