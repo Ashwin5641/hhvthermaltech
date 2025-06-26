@@ -2543,6 +2543,8 @@ body {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
+        height: auto;
+        width: 100%;
     }
 
     .testimonial-container > .testimonial-title > h4 {
@@ -2553,6 +2555,22 @@ body {
         font-weight: 700;
         font-size: 30px;
         font-family: "Montserrat";
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-image > .card-shape > img {
+        height: auto;
+        width: 100%;
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-image > .card-shape {
+        height: auto;
+        width: 100%;
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-content {
+        height: auto;
+        width: 100%;
     }
 }
 
