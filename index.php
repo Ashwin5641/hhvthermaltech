@@ -459,8 +459,8 @@
     <!-- -----------------start of the testimonial container------------------------ -->
     <div class="testimonial-container">
         <div class="testimonial-title">
-            <h4>Our Testmonial</h4>
-            <h1>What our clients say about us</h1>
+            <h4 data-aos="fade-left">Our Testmonial</h4>
+            <h1 data-aos="fade-right">What our clients say about us</h1>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laudantium eos autem soluta temporibus.</p>
         </div>
         <div class="testimonial-cards">
@@ -476,10 +476,10 @@
                             </div>
                             <div class="card-content">
                                 <div class="card-content-title">
-                                    <h3>FEEDBACK</h3>
+                                    <h3 data-aos="fade-right">FEEDBACK</h3>
                                 </div>
                                 <div class="card-content-review">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores doloremque totam vel nobis, delectus quo? At quod expedita, ea nisi dolor minima illo, a ad error iste, corporis dolores minus.</p>
+                                    <p data-aos="fade-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores doloremque totam vel nobis, delectus quo? At quod expedita, ea nisi dolor minima illo, a ad error iste, corporis dolores minus.</p>
                                 </div>
                                 <div class="card-name-ratings">
                                     <div class="card-ratings">
@@ -522,10 +522,10 @@
                             </div>
                             <div class="card-content">
                                 <div class="card-content-title">
-                                    <h3>FEEDBACK</h3>
+                                    <h3 data-aos="fade-right">FEEDBACK</h3>
                                 </div>
                                 <div class="card-content-review">
-                                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores doloremque totam vel nobis, delectus quo? At quod expedita, ea nisi dolor minima illo, a ad error iste, corporis dolores minus.</p>
+                                    <p data-aos="fade-left">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolores doloremque totam vel nobis, delectus quo? At quod expedita, ea nisi dolor minima illo, a ad error iste, corporis dolores minus.</p>
                                 </div>
                                 <div class="card-name-ratings">
                                     <div class="card-ratings">
@@ -656,6 +656,47 @@
         </div>
     </div>
 
+
+
+    <!-- --------------------------start of the contact form container------------------------------ -->
+    <div class="contact-form">
+        <div class="contact-location">
+            <div>
+                <h4>Contact Us</h4>
+                <h1>To Make Requests for Further Information, Contact Us</h1>
+                <div class="icon-title">
+                    <div class="icon">
+                        <span><i class="fa-duotone fa-solid fa-phone-flip"></i></span>
+                    </div>
+                    <div class="title">
+                        <h5>Call Us</h5>
+                        <h3>91+ 8536038908</h3>
+                    </div>
+                </div>
+                <div class="icon-title">
+                    <div class="icon">
+                        <span><i class="fa-duotone fa-solid fa-phone-flip"></i></span>
+                    </div>
+                    <div class="title">
+                        <h5>Our Location</h5>
+                        <h3>No. 17, Phase 1, Peenya, Bengaluru, India</h3>
+                    </div>
+                </div>
+                <div class="icon-title">
+                    <div class="icon">
+                        <span><i class="fa-duotone fa-solid fa-phone-flip"></i></span>
+                    </div>
+                    <div class="title">
+                        <h5>Mail Us</h5>
+                        <h3>example@gmail.com</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-form">
+            
+        </div>
+    </div>
 
 
     <footer>

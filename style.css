@@ -2493,7 +2493,7 @@ body {
     height: 280px;
     width: 280px;
     background-color: #1d3557;
-    border-radius: 0px 50% 50% 50%;
+    border-radius: 0px 50% 0px 50%;
     position: relative;
 }
 .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-image > .card-shape > img {
@@ -2534,6 +2534,8 @@ body {
     .testimonial-container {
         height: auto;
         width: 100%;
+        gap: 40px;
+        padding: 50px 10px;
     }
     .testimonial-container > .testimonial-cards {
         height: auto;
@@ -2546,32 +2548,174 @@ body {
         height: auto;
         width: 100%;
     }
-
     .testimonial-container > .testimonial-title > h4 {
         color: #e63946;
     }
 
     .testimonial-container > .testimonial-title > h1 {
         font-weight: 700;
-        font-size: 30px;
+        font-size: 26px;
         font-family: "Montserrat";
     }
     .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content {
         display: flex;
         flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-image {
+        height: auto;
+        width: 100%;
     }
     .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-image > .card-shape > img {
-        height: auto;
-        width: 100%;
+        max-width: 200px;
+        max-height: 200px;
     }
     .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-image > .card-shape {
-        height: auto;
-        width: 100%;
+        max-height: 230px;
+        max-width: 230px;
     }
     .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-content {
         height: auto;
         width: 100%;
     }
+}
+@media (min-width: 501px) and (max-width: 700px) {
+    .testimonial-container {
+        height: auto;
+        width: 100%;
+        gap: 40px;
+        padding: 50px 20px;
+    }
+    .testimonial-container > .testimonial-cards {
+        height: auto;
+        width: 100%;
+    }
+    .testimonial-container > .testimonial-title {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        width: 100%;
+    }
+    .testimonial-container > .testimonial-title > h4 {
+        color: #e63946;
+    }
+
+    .testimonial-container > .testimonial-title > h1 {
+        font-weight: 700;
+        font-size: 26px;
+        font-family: "Montserrat";
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-image {
+        height: auto;
+        width: 100%;
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-image > .card-shape > img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-image > .card-shape {
+        max-height: 230px;
+        max-width: 230px;
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-content {
+        height: auto;
+        width: 100%;
+    }
+}
+@media (min-width: 701px) and (max-width: 800px) {
+    .testimonial-container {
+        height: auto;
+        width: 100%;
+        gap: 40px;
+        padding: 50px 30px;
+    }
+    .testimonial-container > .testimonial-cards {
+        height: auto;
+        width: 100%;
+    }
+    .testimonial-container > .testimonial-title {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        width: 100%;
+    }
+    .testimonial-container > .testimonial-title > h4 {
+        color: #e63946;
+    }
+
+    .testimonial-container > .testimonial-title > h1 {
+        font-weight: 700;
+        font-size: 26px;
+        font-family: "Montserrat";
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content {
+        display: flex;
+        height: auto;
+        width: 100%;
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-image {
+        height: auto;
+        width: 100%;
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-image > .card-shape > img {
+        max-width: 200px;
+        max-height: 200px;
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-image > .card-shape {
+        max-height: 230px;
+        max-width: 230px;
+    }
+    .testimonial-container > .testimonial-cards > .swiper-wrapper > .card > .card-inside > .card-image-content > .card-content {
+        height: auto;
+        width: 100%;
+    }
+}
+
+
+
+
+/* *****************styling for the contact form container********************** */
+.contact-form {
+    height: 700px;
+    width: 100%;
+    position: relative;
+    display: flex;
+    padding: 50px 40px;
+}
+.contact-form::before {
+    content: '';
+    background-image: url(./assets/images/shape-1.png);
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+    position: absolute;
+    opacity: .25;
+}
+.contact-form > .contact-location {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.contact-form > .contact-location > div > .icon-title {
+    display: flex;
+    gap: 20px;
+}
+.contact-form > .contact-location > div > h4 {
+    color: #e63946;
+    font-weight: 600;
+}
+.contact-form > .contact-location > div > h1 {
+    color: #0b1f3a;
+    font-weight: 700;
 }
 
 
@@ -2612,7 +2756,7 @@ footer > .footer-links-content > .logo-mail-icons > .title > p {
     color: black;
 }
 footer > .footer-links-content > .logo-mail-icons > .mail > input {
-    padding: 15px 80px 15px 20px;
+    padding: 15px 80px 14px 20px;
     background-color: aliceblue;
     border: 0px;
     border-radius: 3px;
@@ -2734,7 +2878,7 @@ footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > 
         align-items: flex-start;
     }
     footer > .footer-links-content > .logo-mail-icons > .mail > input {
-        padding: 15px 50px 15px 20px;
+        padding: 15px 30px 15px 10px;
     }
     footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > .big-icon {
         padding: 17px 22px;
@@ -2744,6 +2888,9 @@ footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > 
     }
     footer > .footer-links-content > .useful-page-links > ul {
         gap: 15px;
+    }
+    footer > .footer-links-content > .useful-page-links > ul {
+        padding: 0px;
     }
 }
 @media (min-width: 401px) and (max-width: 500px) {
@@ -2784,6 +2931,9 @@ footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > 
     footer > .footer-links-content > .useful-page-links > ul {
         gap: 15px;
     }
+    footer > .footer-links-content > .useful-page-links > ul {
+        padding: 0px;
+    }
 }
 @media (min-width: 501px) and (max-width: 700px) {
     footer > .footer-links-content {
@@ -2822,6 +2972,9 @@ footer > .footer-links-content > .contact-icons > .contact > Ul > li > .title > 
     }
     footer > .footer-links-content > .useful-page-links > ul {
         gap: 15px;
+    }
+    footer > .footer-links-content > .useful-page-links > ul {
+        padding: 0px;
     }
 }
 @media (min-width: 701px) and (max-width: 1200px) {
