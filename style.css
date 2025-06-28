@@ -2689,7 +2689,7 @@ body {
     width: 100%;
     position: relative;
     display: flex;
-    padding: 50px 40px;
+    background-color: #fffeff;
 }
 .contact-form::before {
     content: '';
@@ -2700,22 +2700,141 @@ body {
     position: absolute;
     opacity: .25;
 }
+.contact-form > * {
+    z-index: 2;
+}
 .contact-form > .contact-location {
-    width: 100%;
+    width: 50%;
     display: flex;
     justify-content: center;
+    padding: 50px;
 }
-.contact-form > .contact-location > div > .icon-title {
+.contact-form > .contact-location > .title-and-icon {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+}
+.contact-form > .contact-location > .title-and-icon > .icon-title {
     display: flex;
     gap: 20px;
 }
-.contact-form > .contact-location > div > h4 {
+.contact-form > .contact-location > .title-and-icon > .icon-title > .icon > span {
+    font-size: 32px;
+    color: #e63946;
+}
+.contact-form > .contact-location > .title-and-icon > .icon-title > .title > h5 {
+    color: #0b1f3a;
+    font-weight: 500;
+}
+.contact-form > .contact-location > .title-and-icon > .icon-title > .title > h3 {
+    color: #0b1f3a;
+}
+.contact-form > .contact-location > .title-and-icon > h4 {
     color: #e63946;
     font-weight: 600;
 }
-.contact-form > .contact-location > div > h1 {
+.contact-form > .contact-location > .title-and-icon > h1 {
     color: #0b1f3a;
     font-weight: 700;
+}
+.contact-form > .contact-form-input {
+    width: 50%;
+    display: flex;
+    align-items: center;
+}
+.contact-form > .contact-form-input > .form {
+    width: 600px;
+    height: 500px;
+    background-color: rgba(240, 248, 255, 0.705);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border-right: 5px solid #e63946;
+    border-radius: 20px;
+}
+.contact-form > .contact-form-input > .form > .inputs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.contact-form > .contact-form-input > .form > .form-title > h2 {
+    text-align: center;
+    color: #0b1f3a;
+    font-weight: 600;
+}
+.contact-form > .contact-form-input > .form > .inputs > .name-and-mail {
+    display: flex;
+    gap: 20px;
+}
+.contact-form > .contact-form-input > .form > .inputs > .name-and-mail > input {
+    padding: 12px 30px;
+    background-color: #cce7e7;
+    border: 0;
+    border-radius: 5px;
+}
+.contact-form > .contact-form-input > .form > .inputs > .name-and-mail > input[type="email"]:focus {
+    border: 0;
+    outline: none;
+}
+.contact-form > .contact-form-input > .form > .inputs > .name-and-mail > input[type="text"]:focus {
+    border: 0;
+    outline: none;
+}
+.contact-form > .contact-form-input > .form > .inputs > .name-and-mail > input::placeholder {
+    color: #0b1f3a;
+}
+.contact-form > .contact-form-input > .form > .inputs > .phone-and-subject {
+    display: flex;
+    gap: 20px;
+}
+.contact-form > .contact-form-input > .form > .inputs > .phone-and-subject > input {
+    padding: 12px 30px;
+    background-color: #cce7e7;
+    border: 0;
+    border-radius: 5px;
+}
+.contact-form > .contact-form-input > .form > .inputs > .phone-and-subject > input[type="text"]:focus {
+    border: 0;
+    outline: none;
+}
+.contact-form > .contact-form-input > .form > .inputs > .phone-and-subject > input::placeholder {
+    color: #0b1f3a;
+}
+.contact-form > .contact-form-input > .form > .inputs > .phone-and-subject > select {
+    padding: 12px 30px;
+    width: 250px;
+    background-color: #cce7e7;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+    color: #0b1f3a;;
+}
+.contact-form > .contact-form-input > .form > .inputs > .phone-and-subject > select:focus {
+    outline: none;
+    border: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    box-shadow: none;
+}
+.contact-form > .contact-form-input > .form > .inputs > .write-message > textarea {
+    height: 180px;
+    width: 520px;
+    outline: none;
+    border: 0;
+    padding: 20px;
+    background-color: #cce7e7;
+}
+.contact-form > .contact-form-input > .form > .inputs > .write-message > textarea::placeholder {
+    color: #0b1f3a;
+}
+.contact-form > .contact-form-input > .form > .inputs > .button > a {
+    color: #0b1f3a;
+    background-color: #94c7c7;
+    padding: 15px 30px;
+    border-radius: 5px;
 }
 
 

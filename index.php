@@ -661,7 +661,7 @@
     <!-- --------------------------start of the contact form container------------------------------ -->
     <div class="contact-form">
         <div class="contact-location">
-            <div>
+            <div class="title-and-icon">
                 <h4>Contact Us</h4>
                 <h1>To Make Requests for Further Information, Contact Us</h1>
                 <div class="icon-title">
@@ -675,16 +675,16 @@
                 </div>
                 <div class="icon-title">
                     <div class="icon">
-                        <span><i class="fa-duotone fa-solid fa-phone-flip"></i></span>
+                        <span><i class="fa-solid fa-location-dot"></i></span>
                     </div>
                     <div class="title">
-                        <h5>Our Location</h5>
-                        <h3>No. 17, Phase 1, Peenya, Bengaluru, India</h3>
+                        <h5>&nbsp;&nbsp;Our Location</h5>
+                        <h3>&nbsp;&nbsp;No. 17, Phase 1, Peenya, Bengaluru, India</h3>
                     </div>
                 </div>
                 <div class="icon-title">
                     <div class="icon">
-                        <span><i class="fa-duotone fa-solid fa-phone-flip"></i></span>
+                        <span><i class="fa-solid fa-envelope"></i></span>
                     </div>
                     <div class="title">
                         <h5>Mail Us</h5>
@@ -693,12 +693,35 @@
                 </div>
             </div>
         </div>
-        <div class="contact-form">
-            
+        <div class="contact-form-input">
+            <div class="form">
+                <div class="form-title">
+                    <h2>Send Your Message!</h2>
+                </div>
+                <div class="inputs">
+                    <div class="name-and-mail">
+                        <input type="text" placeholder="Your Message">
+                        <input type="email" placeholder="Email Address">
+                    </div>
+                    <div class="phone-and-subject">
+                        <input type="text" placeholder="Phone Number">
+                        <select name="subject" id="">
+                            <option value="">Quotation</option>
+                            <option value="">Order</option>
+                        </select>
+                    </div>
+                    <div class="write-message">
+                        <textarea name="" id="" placeholder="Write a message"></textarea>
+                    </div>
+                    <div class="button">
+                        <a href="#">Send Your Message</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
-
+    <!-- ------------------------start of the footer section container--------------------------- -->
     <footer>
         <div class="footer-links-content">
             <div class="logo-mail-icons">
